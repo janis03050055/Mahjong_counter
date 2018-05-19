@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Mahjong_counter</string>
+    <string name="app_name">麻將台數計算機</string>
+    <string name="TakePicture">拍照</string>
+    <string name="SelectPicture">選擇圖片</string>
+    <string name="HandInput">手動輸入</string>>
+    <string name="BaseScore">底</string>>
+    <string name="MoreScore">台</string>
+    <string name="BaseScoreHint">胡牌者可得基本分</string>>
+    <string name="MoreScoreHint">每多一台得分</string>
+    <string name="Setting">設定</string>
 </resources>
