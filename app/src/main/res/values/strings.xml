@@ -8,4 +8,6 @@
     <string name="BaseScoreHint">胡牌者可得基本分</string>>
     <string name="MoreScoreHint">每多一台得分</string>
     <string name="Setting">設定</string>
+    <string name="Reselect">重新選擇</string>
+    <string name="NextStep">下一步</string>
 </resources>
