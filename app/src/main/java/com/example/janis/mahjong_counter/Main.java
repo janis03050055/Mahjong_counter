@@ -19,23 +19,42 @@ import android.widget.TextView;
 
 public class Main extends AppCompatActivity {
     Button SelectPicture;
-    private static final int PICK_IMAGE = 100; //點選返回也可重新選擇圖片
-    Uri ImageUri; //圖片位址
     EditText editTextBaseScore , editTextMoreScore;
     TextView BaseScoreName, MoreScoreName;
-    int BaseScore = -1, MoreScore = -1, textSum = 0;
+    Uri ImageUri; //圖片位址
     View vMainView;
+    int BaseScore = -1, MoreScore = -1, textSum = 0;
+    private static final int PICK_IMAGE = 100; //點選返回也可重新選擇圖片
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BaseScoreName = findViewById(R.id.editText_BaseScoreName);
-        MoreScoreName = findViewById(R.id.editText_MoreScoreName);
         vMainView = findViewById(android.R.id.content);
-
-        //輸入底/台設定
+        SelectPicture = findViewById(R.id.b_SelectPicture);
         editTextBaseScore = findViewById(R.id.editText_BaseScoreNumber);//底
         editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
+        BaseScoreName = findViewById(R.id.textView_BaseScoreName);
+        MoreScoreName = findViewById(R.id.textView_MoreScoreName);
+
+        //拍照相關按鈕事件
+
+
+        //選擇圖片相關按鈕事件
+        SelectPicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //底和台皆有輸入且合理就打開相簿
+                if(checkScore()) openGallery();
+            }
+        });
+
+
+        //手動輸入相關按鈕事件
+
+
+        
+        //輸入底/台設定
         editTextBaseScore.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -52,11 +71,8 @@ public class Main extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 //輸入字串長度，假設沒輸入字則預設-1
                 textSum = s.toString().length();
-                if(textSum > 0) {
-                    BaseScore = Integer.parseInt(editTextBaseScore.getText().toString());
-                }else{
-                    BaseScore = -1;
-                }
+                if(textSum > 0)BaseScore = Integer.parseInt(editTextBaseScore.getText().toString());
+                else BaseScore = -1;
             }
         });
         editTextMoreScore.addTextChangedListener(new TextWatcher() {
@@ -75,30 +91,12 @@ public class Main extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 //輸入字串長度，假設沒輸入字則預設-1
                 textSum = s.toString().length();
-                if(textSum > 0) {
-                    MoreScore = Integer.parseInt(editTextMoreScore.getText().toString());
-                }else {
-                    MoreScore = -1;
-                }
-
-            }
-        });
-
-        //拍照相關按鈕事件
-
-
-        //選擇圖片相關按鈕事件
-        SelectPicture = findViewById(R.id.b_SelectPicture);
-        SelectPicture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //檢查底/台是否輸入且合理
-                if(checkScore()) openGallery();  //打開相簿
+                if(textSum > 0) MoreScore = Integer.parseInt(editTextMoreScore.getText().toString());
+                else  MoreScore = -1;
             }
         });
 
 
-        //手動輸入相關按鈕事件
 
 
 
