@@ -1,36 +1,134 @@
 package com.example.janis.mahjong_counter;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+//import android.support.design.widget.Snackbar;
 
 
 public class Main extends AppCompatActivity {
     Button SelectPicture;
     private static final int PICK_IMAGE = 100; //點選返回也可重新選擇圖片
     Uri ImageUri; //圖片位址
-
+    EditText editTextBaseScore , editTextMoreScore;
+    TextView BaseScoreName, MoreScoreName;
+    int BaseScore = -1, MoreScore = -1, textSum = 0;
+    View vMainView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BaseScoreName = findViewById(R.id.editText_BaseScoreName);
+        MoreScoreName = findViewById(R.id.editText_MoreScoreName);
+        vMainView = findViewById(android.R.id.content);
+
+        //輸入底/台設定
+        editTextBaseScore = findViewById(R.id.editText_BaseScoreNumber);//底
+        editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
+        editTextBaseScore.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                //Snackbar.make(vMainView, R.string.OnChange + R.string.BaseScoreHint,Snackbar.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                //輸入字串長度，假設沒輸入字則預設-1
+                textSum = s.toString().length();
+                if(textSum > 0) {
+                    BaseScore = Integer.parseInt(editTextBaseScore.getText().toString());
+                }else{
+                    BaseScore = -1;
+                }
+            }
+        });
+        editTextMoreScore.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                //Snackbar.make(vMainView, R.string.OnChange + R.string.MoreScoreHint,Snackbar.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                //輸入字串長度，假設沒輸入字則預設-1
+                textSum = s.toString().length();
+                if(textSum > 0) {
+                    MoreScore = Integer.parseInt(editTextMoreScore.getText().toString());
+                }else {
+                    MoreScore = -1;
+                }
+
+            }
+        });
+
+        //拍照相關按鈕事件
+
 
         //選擇圖片相關按鈕事件
         SelectPicture = findViewById(R.id.b_SelectPicture);
         SelectPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openGallery();
+                //檢查底/台是否輸入且合理
+                if(checkScore()) openGallery();  //打開相簿
             }
         });
 
-        //拍照相關按鈕事件
 
         //手動輸入相關按鈕事件
+
+
+
+    }
+
+    //檢查所輸入底/台是否合理
+    private boolean checkScore(){
+        if(BaseScore < 0 || MoreScore < 0 ){
+            AlertDialog.Builder builder = new AlertDialog.Builder(Main.this);
+            builder.setMessage(R.string.HowManyScore)
+                    .setCancelable(false)
+                    .setPositiveButton("了解", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            //將沒輸入的字變紅提醒使用者，底/台沒輸入或數字不合理
+                            if(BaseScore < 0) BaseScoreName.setTextColor(Color.RED);
+                            else BaseScoreName.setTextColor(Color.BLACK);
+
+                            if(MoreScore < 0) MoreScoreName.setTextColor(Color.RED);
+                            else MoreScoreName.setTextColor(Color.BLACK);
+
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+            return false;
+        }else{
+            BaseScoreName.setTextColor(Color.BLACK);
+            MoreScoreName.setTextColor(Color.BLACK);
+            return true;
+        }
     }
 
     //開啟相簿

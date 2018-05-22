@@ -69,7 +69,7 @@
         app:srcCompat="@android:drawable/ic_menu_preferences" />
 
     <EditText
-        android:id="@+id/editText_MoreScore"
+        android:id="@+id/editText_MoreScoreNumber"
         android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="76dp"
@@ -78,10 +78,10 @@
         android:hint="@string/MoreScoreHint"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_BaseScore" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_BaseScoreNumber" />
 
     <EditText
-        android:id="@+id/editText_BaseScore"
+        android:id="@+id/editText_BaseScoreNumber"
         android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="76dp"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/b_HandInput" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/editText_MoreScoreName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -101,13 +101,13 @@
         android:layout_marginTop="28dp"
         android:text="@string/MoreScore"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText_MoreScore"
+        app:layout_constraintEnd_toStartOf="@+id/editText_MoreScoreNumber"
         app:layout_constraintHorizontal_bias="0.863"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_BaseScoreName" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/editText_BaseScoreName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -115,7 +115,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/BaseScore"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText_BaseScore"
+        app:layout_constraintEnd_toStartOf="@+id/editText_BaseScoreNumber"
         app:layout_constraintHorizontal_bias="0.863"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b_HandInput" />

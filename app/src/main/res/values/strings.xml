@@ -10,4 +10,6 @@
     <string name="Setting">設定</string>
     <string name="Reselect">重新選擇</string>
     <string name="NextStep">下一步</string>
+    <string name="HowManyScore">請設定底/台金額方便計算最終贏得金額</string>
+    <string name="OnChange">更改為</string>
 </resources>
