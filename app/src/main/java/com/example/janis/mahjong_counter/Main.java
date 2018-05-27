@@ -2,6 +2,7 @@ package com.example.janis.mahjong_counter;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -18,10 +19,10 @@ import android.widget.TextView;
 
 
 public class Main extends AppCompatActivity {
-    Button SelectPicture;
+    Button SelectPicture, TakePicture;
     EditText editTextBaseScore , editTextMoreScore;
     TextView BaseScoreName, MoreScoreName;
-    Uri ImageUri; //圖片位址
+    Uri ImageUri, TakePictureUri; //圖片位址
     View vMainView;
     int BaseScore = -1, MoreScore = -1, textSum = 0;
     private static final int PICK_IMAGE = 100; //點選返回也可重新選擇圖片
@@ -32,12 +33,20 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         vMainView = findViewById(android.R.id.content);
         SelectPicture = findViewById(R.id.b_SelectPicture);
+        TakePicture = findViewById(R.id.b_TakePicture);
         editTextBaseScore = findViewById(R.id.editText_BaseScoreNumber);//底
         editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
         BaseScoreName = findViewById(R.id.textView_BaseScoreName);
         MoreScoreName = findViewById(R.id.textView_MoreScoreName);
 
         //拍照相關按鈕事件
+        TakePicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(checkScore())
+                    openCamera();
+            }
+        });
 
 
         //選擇圖片相關按鈕事件
@@ -45,7 +54,8 @@ public class Main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //底和台皆有輸入且合理就打開相簿
-                if(checkScore()) openGallery();
+                if(checkScore())
+                    openGallery();
             }
         });
 
@@ -53,7 +63,7 @@ public class Main extends AppCompatActivity {
         //手動輸入相關按鈕事件
 
 
-        
+
         //輸入底/台設定
         editTextBaseScore.addTextChangedListener(new TextWatcher() {
             @Override
@@ -102,6 +112,12 @@ public class Main extends AppCompatActivity {
 
     }
 
+    //開啟相機
+    private void openCamera() {
+        Intent camera = new Intent(Main.this, TakePicture.class);
+        startActivity(camera);
+    }
+
     //檢查所輸入底/台是否合理
     private boolean checkScore(){
         if(BaseScore < 0 || MoreScore < 0 ){
@@ -136,16 +152,29 @@ public class Main extends AppCompatActivity {
         gallery.setType("image/*");
         startActivityForResult(gallery,PICK_IMAGE);
     }
+
     @Override
     //當該新活動退出時, 會回調onActivityResult(int, int, Intent)方法
     protected void onActivityResult(int RequestCode, int ResultCode, Intent data) {
         super.onActivityResult(RequestCode, ResultCode, data);
+        /*if(ResultCode == RESULT_OK && RequestCode == 0){
+            TakePictureUri = data.getData();
+            //把值帶過去;
+            Bitmap TakePictureBitmap = (Bitmap)data.getExtras().get("takePictureBitmap");
+            Intent camera = new Intent(Main.this, TakePicture.class);
+            camera.putExtra("takePictureBitmap", TakePictureBitmap);
+            startActivity(camera);
+        }*/
+
+
+
+        //打開相簿
         if(ResultCode == RESULT_OK && RequestCode == PICK_IMAGE){
             ImageUri = data.getData();
             //把值帶過去;
-            Intent intent = new Intent(Main.this, PickImageFromGallery.class);
-            intent.putExtra("imageUri", ImageUri);
-            startActivity(intent);
+            Intent gallery = new Intent(Main.this, PickImageFromGallery.class);
+            gallery.putExtra("imageUri", ImageUri);
+            startActivity(gallery);
         }
     }
 }
