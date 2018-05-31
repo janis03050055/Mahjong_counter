@@ -12,4 +12,108 @@
     <string name="NextStep">下一步</string>
     <string name="HowManyScore">請設定底/台金額方便計算最終贏得金額</string>
     <string name="OnChange">更改為</string>
+    //以下為一台
+    <string name="Rule1_Name">門清</string>
+    <string name="Rule1_Explain">開局胡牌時，沒有任何人吃牌、碰牌、明槓。</string>
+
+    <string name="Rule2_Name">不求</string>
+    <string name="Rule2_Explain">完全沒吃牌也沒碰牌，且胡牌的牌由自己摸進。</string>
+
+    <string name="Rule3_Name">自摸</string>
+    <string name="Rule3_Explain">胡牌的牌由自己摸進。</string>
+
+    <string name="Rule4_Name">風牌</string>
+    <string name="Rule4_Explain">拿自己所屬的風位的刻子。以開門為東風逆時針依序為東、南、西、北。</string>
+
+    <string name="Rule5_Name">風圈</string>
+    <string name="Rule5_Explain">拿到與圈風相同的風牌刻子。</string>
+
+    <string name="Rule6_Name">花牌</string>
+    <string name="Rule6_Explain">與風牌計台方式相同，以開門為東風（即1、梅、春）逆時針依序為東（即1、梅、春）、南（即2、蘭、夏）、西（即3、竹、秋）、北（即4、菊、冬）。符合自己的方位時花牌一張即一台。</string>
+
+    <string name="Rule7_Name">搶槓</string>
+    <string name="Rule7_Explain">聽牌時，因別人加槓而加槓的那張牌，恰巧是可以胡的牌。</string>
+
+    <string name="Rule8_Name">三元牌</string>
+    <string name="Rule8_Explain">中、發、白任一種刻子。</string>
+
+    <string name="Rule9_Name">獨聽</string>
+    <string name="Rule9_Explain">邊張、中洞、單吊。</string>
+
+    <string name="Rule10_name">半求</string>
+    <string name="Rule10_Explain">手牌只剩一張牌單吊自摸，而其餘全吃或碰。</string>
+
+    <string name="Rule11_name">槓上開花</string>
+    <string name="Rule11_Explain">因摸到花牌、暗槓或加槓而補牌，補牌後恰巧胡牌。</string>
+
+    <string name="Rule12_name">河底撈魚</string>
+    <string name="Rule12_Explain">胡別人丟出的最後一張牌。</string>
+
+    <string name="Rule13_name">海底撈月</string>
+    <string name="Rule13_Explain">摸牌牆最後一張牌，而自摸者多計一台。因摸到花牌或加槓造成其結果為最後一張牌時，亦以海底撈月計之。</string>
+
+    //以下為二台
+    <string name="Rule14_name">平胡</string>
+    <string name="Rule14_Explain">胡牌由五組順子及一個對子組成，胡他人牌非自摸。牌中無字、花牌、呈兩面聽狀態。釣將不算。</string>
+
+    <string name="Rule15_name">全求</string>
+    <string name="Rule15_Explain">手牌只剩一張牌單吊胡牌，而其餘全吃或碰，且胡他人牌。</string>
+
+    <string name="Rule16_name">花槓</string>
+    <string name="Rule16_Explain">胡牌時門前有『梅蘭竹菊』或『春夏秋冬』任一組。</string>
+
+    <string name="Rule17_name">三暗刻</string>
+    <string name="Rule17_Explain">手牌裡，有三組刻子（包括暗槓)。</string>
+
+    //以下為四台
+    <string name="Rule18_Name">地聽</string>
+    <string name="Rule18_Explain">在無人吃碰情況下，配牌後打出第一張牌即聽牌，且叫聽後不能換牌。門清、不求不能算，可以加計自摸。</string>
+
+    <string name="Rule19_Name">碰碰胡</string>
+    <string name="Rule19_Explain">胡牌全部由刻子再加一個對子組成。</string>
+
+    <string name="Rule20_Name">小三元</string>
+    <string name="Rule20_Explain">胡牌者中、發、白其中二組是刻子一組是對子。</string>
+
+    <string name="Rule21_Name">混一色</string>
+    <string name="Rule21_Explain">胡牌者只有一種數牌，及字牌混合所組成。</string>
+
+    //以下為五台
+    <string name="Rule22_name">四暗刻</string>
+    <string name="Rule22_Explain">胡牌時，手牌裡有四組刻子。</string>
+
+    //以下為八台
+    <string name="Rule23_name">天聽</string>
+    <string name="Rule23_Explain">配牌即聽牌，且叫聽後不能換牌。門清、不求不能算，可以加計自摸。</string>
+
+    <string name="Rule24_name">五暗刻</string>
+    <string name="Rule24_Explain">胡牌時，手牌裡有五組刻子。</string>
+
+    <string name="Rule25_name">大三元</string>
+    <string name="Rule25_Explain">胡牌時，有中、發、白三組刻子。</string>
+
+    <string name="Rule26_name">小四喜</string>
+    <string name="Rule26_Explain">胡牌者完成東、南、西、北其中三組刻子，一組對子。</string>
+
+    <string name="Rule27_name">清一色</string>
+    <string name="Rule27_Explain">整副牌為同一花色所組成，由筒、條或萬所組成的牌。</string>
+
+    <string name="Rule28_name">字一色</string>
+    <string name="Rule28_Explain">全由字牌所組成之牌種，圈風、門風、三元牌台數皆可以複合計算。</string>
+
+    <string name="Rule29_name">八仙過海</string>
+    <string name="Rule29_Explain">拿到全部八張花牌時，應完成補牌動作，才可喊胡，三家通賠一底八台。補進之牌，若造成手牌胡牌者，應另加計。補進之牌，若手牌沒有胡牌者，不得亮牌。</string>
+
+    //以下為十六台
+    <string name="Rule30_name">天胡</string>
+    <string name="Rule30_Explain">莊家取完牌後，已經胡牌，稱為天胡。不得加計門自摸、門清、不求、天地聽。其餘另計。</string>
+
+    <string name="Rule31_name">人胡</string>
+    <string name="Rule31_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，胡他人牌，算清16台，不得加計門清、天地聽。其餘另計。</string>
+
+    <string name="Rule32_name">地胡</string>
+    <string name="Rule32_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，閒家於此巡內第一次摸牌即自摸胡，算清16台，不得加計自摸、門清、不求、天地聽。其餘另計。</string>
+
+    <string name="Rule33_name">大四喜</string>
+    <string name="Rule33_Explain">手牌(含已露牌)有風牌之4種刻(槓)子，不分明暗，算清16台，不得加計門風、圈風台。 其餘另計。</string>
 </resources>
