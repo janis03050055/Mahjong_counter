@@ -14,11 +14,13 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 //import android.support.design.widget.Snackbar;
 
 
 public class Main extends AppCompatActivity {
+    ImageButton Setting;
     Button SelectPicture, TakePicture;
     EditText editTextBaseScore , editTextMoreScore;
     TextView BaseScoreName, MoreScoreName;
@@ -38,6 +40,7 @@ public class Main extends AppCompatActivity {
         editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
         BaseScoreName = findViewById(R.id.textView_BaseScoreName);
         MoreScoreName = findViewById(R.id.textView_MoreScoreName);
+        Setting = findViewById(R.id.b_Setting);
 
         //拍照相關按鈕事件
         TakePicture.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +109,13 @@ public class Main extends AppCompatActivity {
             }
         });
 
-
+        Setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent setting = new Intent(Main.this, SettingsActivity.class);
+                startActivity(setting);
+            }
+        });
 
 
 
