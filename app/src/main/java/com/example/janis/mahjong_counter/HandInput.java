@@ -7,11 +7,13 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class HandInput extends AppCompatActivity {
 
-    private ArrayList<String> mImageUrls = new ArrayList<>();
-
+    private List<String> mImageUrls = new ArrayList<>();
+    private List<String> mImageName = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,42 +24,15 @@ public class HandInput extends AppCompatActivity {
     }
     private void initImageInput(){
         Log.d("image123", "image");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
-        mImageUrls.add("https://imageshack.com/a/img924/5392/edJdop.png");
-        mImageUrls.add("https://ideapit.com/timgs/201602/863io420160217130236.jpg");
+        mImageUrls = Arrays.asList(getResources().getStringArray(R.array.mahjongImage));
+        mImageName = Arrays.asList(getResources().getStringArray(R.array.mahjong));
+
         initHandInput();
     }
 
     private void initHandInput(){
         RecyclerView handInputRecyclerView = findViewById(R.id.recycler_mahjong);
-        HandInputRecyclerView adapter = new HandInputRecyclerView(mImageUrls, this);
+        HandInputRecyclerView adapter = new HandInputRecyclerView(mImageUrls,mImageName, this);
         handInputRecyclerView.setAdapter(adapter);
         handInputRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 

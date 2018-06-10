@@ -1,4 +1,5 @@
 <resources>
+    //介面文字
     <string name="app_name">麻將台數計算機</string>
     <string name="TakePicture">拍照</string>
     <string name="SelectPicture">選擇圖片</string>
@@ -13,7 +14,10 @@
     <string name="HowManyScore">請設定底/台金額方便計算最終贏得金額</string>
     <string name="OnChange">更改為</string>
     <string name="title_activity_settings">設定</string>
+    <string name="count">共有</string>
+    <string name="unit">張</string>
 
+    //麻將
     <string name="w1">一萬</string>
     <string name="w2">二萬</string>
     <string name="w3">三萬</string>
@@ -23,7 +27,6 @@
     <string name="w7">七萬</string>
     <string name="w8">八萬</string>
     <string name="w9">九萬</string>
-
     <string name="b1">一條</string>
     <string name="b2">二條</string>
     <string name="b3">三條</string>
@@ -33,7 +36,6 @@
     <string name="b7">七條</string>
     <string name="b8">八條</string>
     <string name="b9">九條</string>
-
     <string name="t1">一筒</string>
     <string name="t2">二筒</string>
     <string name="t3">三筒</string>
@@ -43,7 +45,6 @@
     <string name="t7">七筒</string>
     <string name="t8">八筒</string>
     <string name="t9">九筒</string>
-
     <string name="east">東</string>
     <string name="south">南</string>
     <string name="west">西</string>
@@ -51,7 +52,6 @@
     <string name="redmiddle">紅中</string>
     <string name="whiteboard">白板</string>
     <string name="greenrich">發財</string>
-
     <string name="spring">春</string>
     <string name="summer">夏</string>
     <string name="fall">秋</string>
@@ -60,12 +60,107 @@
     <string name="lan">蘭</string>
     <string name="bamboo">竹</string>
     <string name="orange">菊</string>
-
     <string name="windeast">風位東</string>
     <string name="windwest">風位西</string>
     <string name="windsouth">風位南</string>
     <string name="windnorth">風位北</string>
 
+    <string-array name="mahjong">
+        <item>@string/w1</item>
+        <item>@string/w2</item>
+        <item>@string/w3</item>
+        <item>@string/w4</item>
+        <item>@string/w5</item>
+        <item>@string/w6</item>
+        <item>@string/w7</item>
+        <item>@string/w8</item>
+        <item>@string/w9</item>
+        <item>@string/b1</item>
+        <item>@string/b2</item>
+        <item>@string/b3</item>
+        <item>@string/b4</item>
+        <item>@string/b5</item>
+        <item>@string/b6</item>
+        <item>@string/b7</item>
+        <item>@string/b8</item>
+        <item>@string/b9</item>
+        <item>@string/t1</item>
+        <item>@string/t2</item>
+        <item>@string/t3</item>
+        <item>@string/t4</item>
+        <item>@string/t5</item>
+        <item>@string/t6</item>
+        <item>@string/t7</item>
+        <item>@string/t8</item>
+        <item>@string/t9</item>
+        <item>@string/east</item>
+        <item>@string/south</item>
+        <item>@string/west</item>
+        <item>@string/north</item>
+        <item>@string/redmiddle</item>
+        <item>@string/whiteboard</item>
+        <item>@string/greenrich</item>
+        <item>@string/spring</item>
+        <item>@string/summer</item>
+        <item>@string/fall</item>
+        <item>@string/winter</item>
+        <item>@string/plum</item>
+        <item>@string/lan</item>
+        <item>@string/bamboo</item>
+        <item>@string/orange</item>
+    </string-array>
+
+    //麻將圖片
+    <string-array name="mahjongImage">
+        //萬
+        <item>https://imageshack.com/a/img922/2383/A0dsui.png</item>
+        <item>https://imageshack.com/a/img921/840/hJLU2i.png</item>
+        <item>https://imageshack.com/a/img924/3485/bkAIy5.png</item>
+        <item>https://imageshack.com/a/img924/3252/e84vkK.png</item>
+        <item>https://imageshack.com/a/img923/1863/ftiXH0.png</item>
+        <item>https://imageshack.com/a/img924/5532/2mZcPa.png</item>
+        <item>https://imageshack.com/a/img923/7600/NxwQl2.png</item>
+        <item>https://imageshack.com/a/img924/8693/QY5GVO.png</item>
+        <item>https://imageshack.com/a/img921/9474/0uJ1EX.png</item>
+        //條
+        <item>https://imageshack.com/a/img921/6808/rGDoPX.png</item>
+        <item>https://imageshack.com/a/img924/4282/A2SG9v.png</item>
+        <item>https://imageshack.com/a/img923/6972/LbZO74.png</item>
+        <item>https://imageshack.com/a/img922/9827/PLOyGt.png</item>
+        <item>https://imageshack.com/a/img922/7343/b73JPo.png</item>
+        <item>https://imageshack.com/a/img921/9375/l1fFgJ.png</item>
+        <item>https://imageshack.com/a/img921/6743/k7YJyO.png</item>
+        <item>https://imageshack.com/a/img922/5466/sHpcr5.png</item>
+        <item>https://imageshack.com/a/img924/3552/vKK5lD.png</item>
+        //筒
+        <item>https://imageshack.com/a/img924/7585/5DnQ2t.png</item>
+        <item>https://imageshack.com/a/img924/4274/6P6GoQ.png</item>
+        <item>https://imageshack.com/a/img924/1628/bAc6bb.png</item>
+        <item>https://imageshack.com/a/img922/4972/RPCHVo.png</item>
+        <item>https://imageshack.com/a/img922/1523/QEeVLq.png</item>
+        <item>https://imageshack.com/a/img923/8729/RFhcGA.png</item>
+        <item>https://imageshack.com/a/img923/609/f7qQst.png</item>
+        <item>https://imageshack.com/a/img922/1856/Xg9gvG.png</item>
+        <item>https://imageshack.com/a/img923/2923/ie2BA7.png</item>
+        //風
+        <item>https://imageshack.com/a/img921/7564/V2bDvw.png</item>
+        <item>https://imageshack.com/a/img924/3443/8lcDX0.png</item>
+        <item>https://imageshack.com/a/img923/4117/gTpqP8.png</item>
+        <item>https://imageshack.com/a/img922/8493/twMbrH.png</item>
+        //雜
+        <item>https://imageshack.com/a/img923/6657/CIayyX.png</item>
+        <item>https://imageshack.com/a/img922/4909/YQkkH6.png</item>
+        <item>https://imageshack.com/a/img924/9609/ws6HCy.png</item>
+        //缺春夏秋冬!!花
+        <item>https://imageshack.com/a/img921/3923/5rMH6M.png</item>
+        <item>https://imageshack.com/a/img923/9027/0Sz4YJ.png</item>
+        <item>https://imageshack.com/a/img923/6089/OpGdBH.png</item>
+        <item>https://imageshack.com/a/img922/127/qpWIh7.png</item>
+        <item>https://imageshack.com/a/img921/3923/5rMH6M.png</item>
+        <item>https://imageshack.com/a/img923/9027/0Sz4YJ.png</item>
+        <item>https://imageshack.com/a/img923/6089/OpGdBH.png</item>
+        <item>https://imageshack.com/a/img922/127/qpWIh7.png</item>
+    </string-array>
     <string name="MoreScore_1">一台</string>
     <string name="MoreScore_2">兩台</string>
     <string name="MoreScore_4">四台</string>

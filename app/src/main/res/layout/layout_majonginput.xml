@@ -4,45 +4,50 @@
     android:padding="15dp"
     android:id="@+id/parent_handinput">
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
         android:id="@+id/image_mahjong"
         android:src="@mipmap/ic_launcher"
         />
 
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
+        android:layout_width="224dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:orientation="horizontal"
-        android:layout_toEndOf="@+id/image_mahjong">
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
 
-    <RadioButton
-        android:id="@+id/radioButton_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Majongnum_0" />
-    <RadioButton
-        android:id="@+id/radioButton_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Majongnum_1" />
-    <RadioButton
-        android:id="@+id/radioButton_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Majongnum_2" />
-    <RadioButton
-        android:id="@+id/radioButton_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Majongnum_3" />
-    <RadioButton
-        android:id="@+id/radioButton_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Majongnum_4" />
+        <RadioButton
+            android:id="@+id/radioButton_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
     </RadioGroup>
 
 
