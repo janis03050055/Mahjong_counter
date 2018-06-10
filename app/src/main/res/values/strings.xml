@@ -14,12 +14,70 @@
     <string name="OnChange">更改為</string>
     <string name="title_activity_settings">設定</string>
 
+    <string name="w1">一萬</string>
+    <string name="w2">二萬</string>
+    <string name="w3">三萬</string>
+    <string name="w4">四萬</string>
+    <string name="w5">五萬</string>
+    <string name="w6">六萬</string>
+    <string name="w7">七萬</string>
+    <string name="w8">八萬</string>
+    <string name="w9">九萬</string>
+
+    <string name="b1">一條</string>
+    <string name="b2">二條</string>
+    <string name="b3">三條</string>
+    <string name="b4">四條</string>
+    <string name="b5">五條</string>
+    <string name="b6">六條</string>
+    <string name="b7">七條</string>
+    <string name="b8">八條</string>
+    <string name="b9">九條</string>
+
+    <string name="t1">一筒</string>
+    <string name="t2">二筒</string>
+    <string name="t3">三筒</string>
+    <string name="t4">四筒</string>
+    <string name="t5">五筒</string>
+    <string name="t6">六筒</string>
+    <string name="t7">七筒</string>
+    <string name="t8">八筒</string>
+    <string name="t9">九筒</string>
+
+    <string name="east">東</string>
+    <string name="south">南</string>
+    <string name="west">西</string>
+    <string name="north">北</string>
+    <string name="redmiddle">紅中</string>
+    <string name="whiteboard">白板</string>
+    <string name="greenrich">發財</string>
+
+    <string name="spring">春</string>
+    <string name="summer">夏</string>
+    <string name="fall">秋</string>
+    <string name="winter">冬</string>
+    <string name="plum">梅</string>
+    <string name="lan">蘭</string>
+    <string name="bamboo">竹</string>
+    <string name="orange">菊</string>
+
+    <string name="windeast">風位東</string>
+    <string name="windwest">風位西</string>
+    <string name="windsouth">風位南</string>
+    <string name="windnorth">風位北</string>
+
     <string name="MoreScore_1">一台</string>
     <string name="MoreScore_2">兩台</string>
     <string name="MoreScore_4">四台</string>
     <string name="MoreScore_5">五台</string>
     <string name="MoreScore_8">八台</string>
     <string name="MoreScore_16">十六台</string>
+
+    <string name="Majongnum_0">0</string>
+    <string name="Majongnum_1">1</string>
+    <string name="Majongnum_2">2</string>
+    <string name="Majongnum_3">3</string>
+    <string name="Majongnum_4">4</string>
 
     <!-- Strings related to Settings -->
     <string name="rule_setting">規則設定</string>
@@ -198,7 +256,6 @@
     <string name="Rule33_Explain">手牌(含已露牌)有風牌之4種刻(槓)子，不分明暗，算清16台，不得加計門風、圈風台。 其餘另計。</string>
 
 
-
     <string name="pref_title_social_recommendations">Enable social recommendations</string>
     <string name="pref_description_social_recommendations">Recommendations for people to contact
         based on your message history
@@ -206,7 +263,6 @@
 
     <string name="pref_title_display_name">Display name</string>
     <string name="pref_default_display_name">John Smith</string>
-
 
 
     <!-- Example settings for Data & Sync -->

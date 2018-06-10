@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,7 +22,7 @@ import android.widget.TextView;
 
 public class Main extends AppCompatActivity {
     ImageButton Setting;
-    Button SelectPicture, TakePicture;
+    Button SelectPicture, TakePicture, HandInput;
     EditText editTextBaseScore , editTextMoreScore;
     TextView BaseScoreName, MoreScoreName;
     Uri ImageUri, TakePictureUri; //圖片位址
@@ -36,6 +37,7 @@ public class Main extends AppCompatActivity {
         vMainView = findViewById(android.R.id.content);
         SelectPicture = findViewById(R.id.b_SelectPicture);
         TakePicture = findViewById(R.id.b_TakePicture);
+        HandInput = findViewById(R.id.b_HandInput);
         editTextBaseScore = findViewById(R.id.editText_BaseScoreNumber);//底
         editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
         BaseScoreName = findViewById(R.id.textView_BaseScoreName);
@@ -64,7 +66,14 @@ public class Main extends AppCompatActivity {
 
 
         //手動輸入相關按鈕事件
-
+        HandInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //底和台皆有輸入且合理就打開相簿
+                if(checkScore())
+                    openHandInput();
+            }
+        });
 
 
         //輸入底/台設定
@@ -119,6 +128,12 @@ public class Main extends AppCompatActivity {
 
 
 
+    }
+
+    private void  openHandInput(){
+        Log.d("openHandInput", "openHandInput");
+        Intent handinput = new Intent(Main.this, HandInput.class);
+        startActivity(handinput);
     }
 
     //開啟相機
