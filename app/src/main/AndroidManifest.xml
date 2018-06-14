@@ -22,7 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PickImageFromGallery" />
-        <activity android:name=".TakePicture"></activity>
+        <activity android:name=".TakePicture" />
+        <activity android:name=".HandInput" />
+        <activity android:name=".HandInputCheck"></activity>
     </application>
 
 </manifest>

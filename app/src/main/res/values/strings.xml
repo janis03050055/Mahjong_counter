@@ -1,4 +1,5 @@
 <resources>
+    //介面文字
     <string name="app_name">麻將台數計算機</string>
     <string name="TakePicture">拍照</string>
     <string name="SelectPicture">選擇圖片</string>
@@ -12,4 +13,398 @@
     <string name="NextStep">下一步</string>
     <string name="HowManyScore">請設定底/台金額方便計算最終贏得金額</string>
     <string name="OnChange">更改為</string>
+    <string name="title_activity_settings">設定</string>
+    <string name="count">共有</string>
+    <string name="unit">張</string>
+
+    //麻將
+    <string name="w1">一萬</string>
+    <string name="w2">二萬</string>
+    <string name="w3">三萬</string>
+    <string name="w4">四萬</string>
+    <string name="w5">五萬</string>
+    <string name="w6">六萬</string>
+    <string name="w7">七萬</string>
+    <string name="w8">八萬</string>
+    <string name="w9">九萬</string>
+    <string name="b1">一條</string>
+    <string name="b2">二條</string>
+    <string name="b3">三條</string>
+    <string name="b4">四條</string>
+    <string name="b5">五條</string>
+    <string name="b6">六條</string>
+    <string name="b7">七條</string>
+    <string name="b8">八條</string>
+    <string name="b9">九條</string>
+    <string name="t1">一筒</string>
+    <string name="t2">二筒</string>
+    <string name="t3">三筒</string>
+    <string name="t4">四筒</string>
+    <string name="t5">五筒</string>
+    <string name="t6">六筒</string>
+    <string name="t7">七筒</string>
+    <string name="t8">八筒</string>
+    <string name="t9">九筒</string>
+    <string name="east">東</string>
+    <string name="south">南</string>
+    <string name="west">西</string>
+    <string name="north">北</string>
+    <string name="redmiddle">紅中</string>
+    <string name="whiteboard">白板</string>
+    <string name="greenrich">發財</string>
+    <string name="spring">春</string>
+    <string name="summer">夏</string>
+    <string name="fall">秋</string>
+    <string name="winter">冬</string>
+    <string name="plum">梅</string>
+    <string name="lan">蘭</string>
+    <string name="bamboo">竹</string>
+    <string name="orange">菊</string>
+    <string name="windeast">風位東</string>
+    <string name="windwest">風位西</string>
+    <string name="windsouth">風位南</string>
+    <string name="windnorth">風位北</string>
+
+    <string-array name="mahjong">
+        <item>@string/w1</item>
+        <item>@string/w2</item>
+        <item>@string/w3</item>
+        <item>@string/w4</item>
+        <item>@string/w5</item>
+        <item>@string/w6</item>
+        <item>@string/w7</item>
+        <item>@string/w8</item>
+        <item>@string/w9</item>
+        <item>@string/b1</item>
+        <item>@string/b2</item>
+        <item>@string/b3</item>
+        <item>@string/b4</item>
+        <item>@string/b5</item>
+        <item>@string/b6</item>
+        <item>@string/b7</item>
+        <item>@string/b8</item>
+        <item>@string/b9</item>
+        <item>@string/t1</item>
+        <item>@string/t2</item>
+        <item>@string/t3</item>
+        <item>@string/t4</item>
+        <item>@string/t5</item>
+        <item>@string/t6</item>
+        <item>@string/t7</item>
+        <item>@string/t8</item>
+        <item>@string/t9</item>
+        <item>@string/east</item>
+        <item>@string/south</item>
+        <item>@string/west</item>
+        <item>@string/north</item>
+        <item>@string/redmiddle</item>
+        <item>@string/whiteboard</item>
+        <item>@string/greenrich</item>
+        <item>@string/spring</item>
+        <item>@string/summer</item>
+        <item>@string/fall</item>
+        <item>@string/winter</item>
+        <item>@string/plum</item>
+        <item>@string/lan</item>
+        <item>@string/bamboo</item>
+        <item>@string/orange</item>
+    </string-array>
+
+    //麻將圖片
+    <string-array name="mahjongImage">
+        //萬
+        <item>https://imageshack.com/a/img922/2383/A0dsui.png</item>
+        <item>https://imageshack.com/a/img921/840/hJLU2i.png</item>
+        <item>https://imageshack.com/a/img924/3485/bkAIy5.png</item>
+        <item>https://imageshack.com/a/img924/3252/e84vkK.png</item>
+        <item>https://imageshack.com/a/img923/1863/ftiXH0.png</item>
+        <item>https://imageshack.com/a/img924/5532/2mZcPa.png</item>
+        <item>https://imageshack.com/a/img923/7600/NxwQl2.png</item>
+        <item>https://imageshack.com/a/img924/8693/QY5GVO.png</item>
+        <item>https://imageshack.com/a/img921/9474/0uJ1EX.png</item>
+        //條
+        <item>https://imageshack.com/a/img921/6808/rGDoPX.png</item>
+        <item>https://imageshack.com/a/img924/4282/A2SG9v.png</item>
+        <item>https://imageshack.com/a/img923/6972/LbZO74.png</item>
+        <item>https://imageshack.com/a/img922/9827/PLOyGt.png</item>
+        <item>https://imageshack.com/a/img922/7343/b73JPo.png</item>
+        <item>https://imageshack.com/a/img921/9375/l1fFgJ.png</item>
+        <item>https://imageshack.com/a/img921/6743/k7YJyO.png</item>
+        <item>https://imageshack.com/a/img922/5466/sHpcr5.png</item>
+        <item>https://imageshack.com/a/img924/3552/vKK5lD.png</item>
+        //筒
+        <item>https://imageshack.com/a/img924/7585/5DnQ2t.png</item>
+        <item>https://imageshack.com/a/img924/4274/6P6GoQ.png</item>
+        <item>https://imageshack.com/a/img924/1628/bAc6bb.png</item>
+        <item>https://imageshack.com/a/img922/4972/RPCHVo.png</item>
+        <item>https://imageshack.com/a/img922/1523/QEeVLq.png</item>
+        <item>https://imageshack.com/a/img923/8729/RFhcGA.png</item>
+        <item>https://imageshack.com/a/img923/609/f7qQst.png</item>
+        <item>https://imageshack.com/a/img922/1856/Xg9gvG.png</item>
+        <item>https://imageshack.com/a/img923/2923/ie2BA7.png</item>
+        //風
+        <item>https://imageshack.com/a/img921/7564/V2bDvw.png</item>
+        <item>https://imageshack.com/a/img924/3443/8lcDX0.png</item>
+        <item>https://imageshack.com/a/img923/4117/gTpqP8.png</item>
+        <item>https://imageshack.com/a/img922/8493/twMbrH.png</item>
+        //雜
+        <item>https://imageshack.com/a/img923/6657/CIayyX.png</item>
+        <item>https://imageshack.com/a/img922/4909/YQkkH6.png</item>
+        <item>https://imageshack.com/a/img924/9609/ws6HCy.png</item>
+        //缺春夏秋冬!!花
+        <item>https://imageshack.com/a/img921/672/HoTOmO.png</item>
+        <item>https://imageshack.com/a/img923/3566/mAtQ6Z.png</item>
+        <item>https://imageshack.com/a/img922/4157/iI0SjF.png</item>
+        <item>https://imageshack.com/a/img922/3707/fnxfLz.png</item>
+        <item>https://imageshack.com/a/img921/3923/5rMH6M.png</item>
+        <item>https://imageshack.com/a/img923/9027/0Sz4YJ.png</item>
+        <item>https://imageshack.com/a/img923/6089/OpGdBH.png</item>
+        <item>https://imageshack.com/a/img922/127/qpWIh7.png</item>
+    </string-array>
+    <string name="MoreScore_1">一台</string>
+    <string name="MoreScore_2">兩台</string>
+    <string name="MoreScore_4">四台</string>
+    <string name="MoreScore_5">五台</string>
+    <string name="MoreScore_8">八台</string>
+    <string name="MoreScore_16">十六台</string>
+
+    <string name="Majongnum_0">0</string>
+    <string name="Majongnum_1">1</string>
+    <string name="Majongnum_2">2</string>
+    <string name="Majongnum_3">3</string>
+    <string name="Majongnum_4">4</string>
+
+    <!-- Strings related to Settings -->
+    <string name="rule_setting">規則設定</string>
+
+    <array name="translation_type_values">
+        <item>@string/Rule1_Name</item>
+        <item>@string/Rule2_Name</item>
+        <item>@string/Rule3_Name</item>
+    </array>
+
+    <string name="Rule_NS_search">通用規則選擇</string>
+    <string-array name="Rule_NS_search_titles">
+        <item>南部通用規則</item>
+        <item>北部通用規則</item>
+    </string-array>
+    <string-array name="Rule_NS_search_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="Rule_S">南部通用規則說明</string>
+    <string name="Rule_S_Explain">南部台數計算:
+        聽雙頭說明:手邊有2條3條，聽1、4條或是手邊有3筒4筒，聽25筒….。
+        邊張說明: 手邊有2條3條，聽1條或是手邊有8筒9筒，聽7筒….。
+        中洞說明: 手邊有1條3條，聽2條或是手邊有5筒7筒，聽6筒….。
+        滿台是4台
+        東西南北，紅中白板發財有台。
+        莊家順風算2台
+        舉例:
+        東風東，紅中白板發財都算2台
+        南風南，紅中白板發財也都算2台
+
+        天胡、大、小四喜、清一色都是4台
+        大3元，湊一色、碰碰胡都是2台
+        平胡算1台、3暗槓1台，4暗槓2台，5暗槓4台，自摸+1台，搶槓多1台，最多還是4台。
+
+        連莊台數另外算
+        舉例:
+        連1拉1加2台
+        連2拉2加4台
+        以此類推
+
+        台數總和舉例:
+        自摸清一色是4台，連2拉2也是4台，總共8台。
+        註:未說明之規則一律為北部通用規則台數的一半來計算，但不會超過上限台數。
+    </string>
+    <string name="Rule_N">北部通用規則說明</string>
+    <string name="Rule_N_Explain">北部台數計算:
+        聽雙頭說明:手邊有2條3條，聽1、4條或是手邊有3筒4筒，聽25筒….。
+        邊張說明: 手邊有2條3條，聽1條或是手邊有8筒9筒，聽7筒….。
+        中洞說明: 手邊有1條3條，聽2條或是手邊有5筒7筒，聽6筒….。
+        東西南北，紅中白板金花有台，台數無上限。
+        平胡:沒有任何大牌，沒有任何花，聽雙頭的。
+        天胡32台
+        大4喜、地胡16台
+        7搶1(搶花)、大3元、小4喜、清一色，摸8隻花8台。
+        小3元、碰碰胡、湊一色4台。
+        3暗槓2台，4暗槓5台，5暗槓8台。
+        自摸1台，莊家自摸2台。
+        搶聽8台。
+        搶聽說明:開場打的前4隻牌，有聽牌就算搶聽，中間過程有人吃或碰就沒有了
+
+        莊家順風算2台
+        舉例:
+        東風東，紅中白板發財都算2台。
+        南風南，紅中白板發財也都算2台。
+
+        花:梅蘭竹菊，春夏秋冬2台(要湊齊其中一樣的全部)。
+
+        連莊台數另外算
+        舉例:
+        連1拉1加2台
+        連2拉2加4台
+        以此類推
+
+        台數總和舉例:
+        自摸天胡是33台，連5拉5也是10台，總共43台。
+    </string>
+
+    <string name="Rule1_Name">門清</string>
+    <string name="Rule1_Explain">開局胡牌時，沒有任何人吃牌、碰牌、明槓。</string>
+
+    <string name="Rule2_Name">不求</string>
+    <string name="Rule2_Explain">完全沒吃牌也沒碰牌，且胡牌的牌由自己摸進。</string>
+
+    <string name="Rule3_Name">自摸</string>
+    <string name="Rule3_Explain">胡牌的牌由自己摸進。</string>
+
+    <string name="Rule4_Name">風牌</string>
+    <string name="Rule4_Explain">拿自己所屬的風位的刻子。以開門為東風逆時針依序為東、南、西、北。</string>
+
+    <string name="Rule5_Name">風圈</string>
+    <string name="Rule5_Explain">拿到與圈風相同的風牌刻子。</string>
+
+    <string name="Rule6_Name">花牌</string>
+    <string name="Rule6_Explain">與風牌計台方式相同，以開門為東風（即1、梅、春）逆時針依序為東（即1、梅、春）、南（即2、蘭、夏）、西（即3、竹、秋）、北（即4、菊、冬）。符合自己的方位時花牌一張即一台。</string>
+
+    <string name="Rule7_Name">搶槓</string>
+    <string name="Rule7_Explain">聽牌時，因別人加槓而加槓的那張牌，恰巧是可以胡的牌。</string>
+
+    <string name="Rule8_Name">三元牌</string>
+    <string name="Rule8_Explain">中、發、白任一種刻子。</string>
+
+    <string name="Rule9_Name">獨聽</string>
+    <string name="Rule9_Explain">邊張、中洞、單吊。</string>
+
+    <string name="Rule10_Name">半求</string>
+    <string name="Rule10_Explain">手牌只剩一張牌單吊自摸，而其餘全吃或碰。</string>
+
+    <string name="Rule11_Name">槓上開花</string>
+    <string name="Rule11_Explain">因摸到花牌、暗槓或加槓而補牌，補牌後恰巧胡牌。</string>
+
+    <string name="Rule12_Name">河底撈魚</string>
+    <string name="Rule12_Explain">胡別人丟出的最後一張牌。</string>
+
+    <string name="Rule13_Name">海底撈月</string>
+    <string name="Rule13_Explain">摸牌牆最後一張牌，而自摸者多計一台。因摸到花牌或加槓造成其結果為最後一張牌時，亦以海底撈月計之。</string>
+
+    <string name="Rule14_Name">平胡</string>
+    <string name="Rule14_Explain">胡牌由五組順子及一個對子組成，胡他人牌非自摸。牌中無字、花牌、呈兩面聽狀態。釣將不算。</string>
+
+    <string name="Rule15_Name">全求</string>
+    <string name="Rule15_Explain">手牌只剩一張牌單吊胡牌，而其餘全吃或碰，且胡他人牌。</string>
+
+    <string name="Rule16_Name">花槓</string>
+    <string name="Rule16_Explain">胡牌時門前有『梅蘭竹菊』或『春夏秋冬』任一組。</string>
+
+    <string name="Rule17_Name">三暗刻</string>
+    <string name="Rule17_Explain">手牌裡，有三組刻子（包括暗槓)。</string>
+
+    <string name="Rule18_Name">地聽</string>
+    <string name="Rule18_Explain">在無人吃碰情況下，配牌後打出第一張牌即聽牌，且叫聽後不能換牌。門清、不求不能算，可以加計自摸。</string>
+
+    <string name="Rule19_Name">碰碰胡</string>
+    <string name="Rule19_Explain">胡牌全部由刻子再加一個對子組成。</string>
+
+    <string name="Rule20_Name">小三元</string>
+    <string name="Rule20_Explain">胡牌者中、發、白其中二組是刻子一組是對子。</string>
+
+    <string name="Rule21_Name">混一色</string>
+    <string name="Rule21_Explain">胡牌者只有一種數牌，及字牌混合所組成。</string>
+
+    <string name="Rule22_Name">四暗刻</string>
+    <string name="Rule22_Explain">胡牌時，手牌裡有四組刻子。</string>
+
+    <string name="Rule23_Name">天聽</string>
+    <string name="Rule23_Explain">配牌即聽牌，且叫聽後不能換牌。門清、不求不能算，可以加計自摸。</string>
+
+    <string name="Rule24_Name">五暗刻</string>
+    <string name="Rule24_Explain">胡牌時，手牌裡有五組刻子。</string>
+
+    <string name="Rule25_Name">大三元</string>
+    <string name="Rule25_Explain">胡牌時，有中、發、白三組刻子。</string>
+
+    <string name="Rule26_Name">小四喜</string>
+    <string name="Rule26_Explain">胡牌者完成東、南、西、北其中三組刻子，一組對子。</string>
+
+    <string name="Rule27_Name">清一色</string>
+    <string name="Rule27_Explain">整副牌為同一花色所組成，由筒、條或萬所組成的牌。</string>
+
+    <string name="Rule28_Name">字一色</string>
+    <string name="Rule28_Explain">全由字牌所組成之牌種，圈風、門風、三元牌台數皆可以複合計算。</string>
+
+    <string name="Rule29_Name">八仙過海</string>
+    <string name="Rule29_Explain">拿到全部八張花牌時，應完成補牌動作，才可喊胡，三家通賠一底八台。補進之牌，若造成手牌胡牌者，應另加計。補進之牌，若手牌沒有胡牌者，不得亮牌。</string>
+
+    <string name="Rule30_Name">天胡</string>
+    <string name="Rule30_Explain">莊家取完牌後，已經胡牌，稱為天胡。不得加計門自摸、門清、不求、天地聽。其餘另計。</string>
+
+    <string name="Rule31_Name">人胡</string>
+    <string name="Rule31_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，胡他人牌，算清16台，不得加計門清、天地聽。其餘另計。</string>
+
+    <string name="Rule32_Name">地胡</string>
+    <string name="Rule32_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，閒家於此巡內第一次摸牌即自摸胡，算清16台，不得加計自摸、門清、不求、天地聽。其餘另計。</string>
+
+    <string name="Rule33_Name">大四喜</string>
+    <string name="Rule33_Explain">手牌(含已露牌)有風牌之4種刻(槓)子，不分明暗，算清16台，不得加計門風、圈風台。 其餘另計。</string>
+
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
 </resources>

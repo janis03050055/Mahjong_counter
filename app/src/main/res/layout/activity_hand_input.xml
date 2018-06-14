@@ -1,0 +1,1808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".HandInput">
+
+    <TextView
+        android:id="@+id/tv_w1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w1"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w1"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w2"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w2"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w3"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w3"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w4"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w4"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w4_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w5"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w5"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w5_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w6"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w6"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w6_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w7"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w7"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w7_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w8"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w8"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w8_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_w9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/w9"
+        android:textSize="23sp"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_w9"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_w9_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w9_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w9_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w9_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_w9_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t1"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t1"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t2"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t2"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t3"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t3"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t4"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t4"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t4_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t5"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t5"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t5_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t6"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t6"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t6_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t7"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t7"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t7_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/tv_t8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t8"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t8"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t8_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_t9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t9"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_t9"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_t9_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t9_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t9_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t9_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_t9_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b1"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b1"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b2"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b2"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b3"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b3"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b4"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b4"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b4_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b5"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b5"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b5_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b6"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b6"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b6_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b7"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b7"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b7_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b8"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b8"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b8_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b9"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_b9"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_b9_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b9_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b9_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b9_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_b9_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/east"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_east"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_east_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_east_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_east_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_east_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_east_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_south"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/south"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_south"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_south_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_south_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_south_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_south_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_south_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/west"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_west"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_west_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_west_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_west_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_west_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_west_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/north"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_north"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_north_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_north_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_north_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_north_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_north_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_redmiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redmiddle"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_redmiddle"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_redmiddle_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_redmiddle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_redmiddle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_redmiddle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_redmiddle_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_whiteboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whiteboard"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_whiteboard"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_whiteboard_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_whiteboard_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_whiteboard_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_whiteboard_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_whiteboard_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/tv_greenrich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greenrich"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_greenrich"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_greenrich_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_greenrich_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_greenrich_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_greenrich_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_3" />
+
+        <RadioButton
+            android:id="@+id/radioButton_greenrich_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_4" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_spring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spring"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_spring"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_spring_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_spring_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_summer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summer"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_summer"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_summer_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_summer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_fall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fall"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_fall"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_fall_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_fall_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_winter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/winter"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_winter"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_winter_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_winter_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_plum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plum"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_plum"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_plum_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_plum_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_lan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lan"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_lan"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_lan_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_lan_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_bamboo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bamboo"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_bamboo"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_bamboo_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_bamboo_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orange"
+        android:textSize="23sp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioButton_group_orange"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_orange_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_0" />
+
+        <RadioButton
+            android:id="@+id/radioButton_orange_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Majongnum_1" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/b_NextStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NextStep"
+        />
+</LinearLayout>
+</ScrollView>

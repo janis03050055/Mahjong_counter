@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 
 public class Main extends AppCompatActivity {
-    Button SelectPicture, TakePicture;
+    Button SelectPicture, TakePicture, HandInput;
     EditText editTextBaseScore , editTextMoreScore;
     TextView BaseScoreName, MoreScoreName;
     Uri ImageUri, TakePictureUri; //圖片位址
@@ -34,6 +34,7 @@ public class Main extends AppCompatActivity {
         vMainView = findViewById(android.R.id.content);
         SelectPicture = findViewById(R.id.b_SelectPicture);
         TakePicture = findViewById(R.id.b_TakePicture);
+        HandInput = findViewById(R.id.b_HandInput);
         editTextBaseScore = findViewById(R.id.editText_BaseScoreNumber);//底
         editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
         BaseScoreName = findViewById(R.id.textView_BaseScoreName);
@@ -61,7 +62,17 @@ public class Main extends AppCompatActivity {
 
 
         //手動輸入相關按鈕事件
+        HandInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //底和台皆有輸入且合理就打開相簿
+                if(checkScore()){
+                    Intent gallery = new Intent(Main.this, HandInput.class);
+                    startActivity(gallery);
+                }
 
+            }
+        });
 
 
         //輸入底/台設定
