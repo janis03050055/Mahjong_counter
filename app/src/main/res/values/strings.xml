@@ -16,6 +16,7 @@
     <string name="title_activity_settings">設定</string>
     <string name="count">共有</string>
     <string name="unit">張</string>
+    <string name="time">次</string>
 
     //麻將
     <string name="w1">一萬</string>
@@ -349,6 +350,9 @@
 
     <string name="Rule33_Name">大四喜</string>
     <string name="Rule33_Explain">手牌(含已露牌)有風牌之4種刻(槓)子，不分明暗，算清16台，不得加計門風、圈風台。 其餘另計。</string>
+
+    <string name="Rule34_Name">連莊</string>
+    <string name="Rule34_Explain">連續贏兩次填一</string>
 
 
     <string name="pref_title_social_recommendations">Enable social recommendations</string>

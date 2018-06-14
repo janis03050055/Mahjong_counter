@@ -19,6 +19,7 @@ public class HandInputCheck extends AppCompatActivity {
 
         taiscore_explain = getIntent().getStringArrayListExtra("taiscore_explain");
         tai = getIntent().getIntExtra("tai",0);
+
         //debug 用
         String j;
         for(int i = 0;i<taiscore_explain.size();i++){
@@ -26,5 +27,7 @@ public class HandInputCheck extends AppCompatActivity {
             Log.d("台數詳解勾選",j);
         }
         Log.d("台數總計公選",String.valueOf(tai));
+
+
     }
 }
