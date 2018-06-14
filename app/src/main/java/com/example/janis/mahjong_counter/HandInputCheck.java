@@ -3,26 +3,28 @@ package com.example.janis.mahjong_counter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
-public class HandInputCheck extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
-    private int[][] mahjong = null;
-    private String[][] mahjong_num = null;
+public class HandInputCheck extends AppCompatActivity {
+    private List<String> taiscore_explain = new ArrayList<>();
+    private int tai = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hand_input_check);
 
-        Object[] objectArray = (Object[]) getIntent().getExtras().getSerializable("mahjong");
-        if(objectArray!=null){
-            mahjong_num = new String[objectArray.length][];
-            for(int i=0;i<objectArray.length;i++){
-                mahjong_num[i]=(String[]) objectArray[i];
-            }
+        taiscore_explain = getIntent().getStringArrayListExtra("taiscore_explain");
+        tai = getIntent().getIntExtra("tai",0);
+        //debug 用
+        String j;
+        for(int i = 0;i<taiscore_explain.size();i++){
+            j = taiscore_explain.get( i );
+            Log.d("台數詳解勾選",j);
         }
-
-        //Toast.makeText(this, mahjong[0][0]+"張一條", Toast.LENGTH_LONG).show();
-
+        Log.d("台數總計公選",String.valueOf(tai));
     }
 }

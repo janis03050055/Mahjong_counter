@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1116,6 +1115,7 @@ public class HandInput extends AppCompatActivity {
             taiscore_explain.add(getResources().getString(R.string.Rule20_Name) + rulescore[19] + "台；");
         }else if (R_7){//Rule8:三元牌
             tai = tai + rulescore[7];
+            taiscore_explain.add(getResources().getString(R.string.Rule8_Name) + rulescore[7] + "台；");
         }
 
         //Rule26:小四喜，胡牌者完成東、南、西、北其中三組刻子，一組對子。 by豐
