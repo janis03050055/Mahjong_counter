@@ -17,6 +17,8 @@
     <string name="count">共有</string>
     <string name="unit">張</string>
     <string name="time">次</string>
+    <string name="explain">麻將術語解釋</string>
+    <string name="explain_detail">麻將術語詳細解釋</string>
 
     //麻將
     <string name="w1">一萬</string>
@@ -253,7 +255,7 @@
     </string>
 
     <string name="Rule1_Name">門清</string>
-    <string name="Rule1_Explain">開局胡牌時，沒有任何人吃牌、碰牌、明槓。</string>
+    <string name="Rule1_Explain">胡牌前沒有吃、碰、明槓，只可以有暗槓，這樣就是門清。只有摸到花牌依樣算是門清!</string>
 
     <string name="Rule2_Name">不求</string>
     <string name="Rule2_Explain">完全沒吃牌也沒碰牌，且胡牌的牌由自己摸進。</string>
@@ -265,16 +267,16 @@
     <string name="Rule4_Explain">拿自己所屬的風位的刻子。以開門為東風逆時針依序為東、南、西、北。</string>
 
     <string name="Rule5_Name">風圈</string>
-    <string name="Rule5_Explain">拿到與圈風相同的風牌刻子。</string>
+    <string name="Rule5_Explain">風圈：我們常說東南西北，通常第一圈就叫做東風圈，然後就是南風圈、西風圈、北風圈。只要在該風圈拿到相對應的坎子(三支一樣)或槓子(四支一樣) ，就可獲得一台。</string>
 
     <string name="Rule6_Name">花牌</string>
-    <string name="Rule6_Explain">與風牌計台方式相同，以開門為東風（即1、梅、春）逆時針依序為東（即1、梅、春）、南（即2、蘭、夏）、西（即3、竹、秋）、北（即4、菊、冬）。符合自己的方位時花牌一張即一台。</string>
+    <string name="Rule6_Explain">拿到相對應的花牌，可以獲得一台喔！對應的方式如下：東風位(春、梅) | 南風位(夏、蘭) | 西風位(秋、菊) | 北風位(冬、竹)</string>
 
     <string name="Rule7_Name">搶槓</string>
     <string name="Rule7_Explain">聽牌時，因別人加槓而加槓的那張牌，恰巧是可以胡的牌。</string>
 
     <string name="Rule8_Name">三元牌</string>
-    <string name="Rule8_Explain">中、發、白任一種刻子。</string>
+    <string name="Rule8_Explain">只要組成紅中、發財、白板任何一種坎子(三張相同)或槓子(四張相同)，就可獲得1台。</string>
 
     <string name="Rule9_Name">獨聽</string>
     <string name="Rule9_Explain">邊張、中洞、單吊。</string>
@@ -283,7 +285,7 @@
     <string name="Rule10_Explain">手牌只剩一張牌單吊自摸，而其餘全吃或碰。</string>
 
     <string name="Rule11_Name">槓上開花</string>
-    <string name="Rule11_Explain">因摸到花牌、暗槓或加槓而補牌，補牌後恰巧胡牌。</string>
+    <string name="Rule11_Explain">摸到花、加槓或暗槓後，從海底摸一張牌，如果摸進來的牌剛好自摸，就叫做稱為「槓上開花」，可以多或得一台！</string>
 
     <string name="Rule12_Name">河底撈魚</string>
     <string name="Rule12_Explain">胡別人丟出的最後一張牌。</string>
@@ -304,7 +306,7 @@
     <string name="Rule17_Explain">手牌裡，有三組刻子（包括暗槓)。</string>
 
     <string name="Rule18_Name">地聽</string>
-    <string name="Rule18_Explain">在無人吃碰情況下，配牌後打出第一張牌即聽牌，且叫聽後不能換牌。門清、不求不能算，可以加計自摸。</string>
+    <string name="Rule18_Explain">在無人吃碰情況下，配牌後打出第一張牌即聽牌，且叫聽後不能換牌。天聽、地聽、獨聽、天胡、地胡、人胡、門清、不求不能算，可以加計自摸。</string>
 
     <string name="Rule19_Name">碰碰胡</string>
     <string name="Rule19_Explain">胡牌全部由刻子再加一個對子組成。</string>
@@ -319,7 +321,7 @@
     <string name="Rule22_Explain">胡牌時，手牌裡有四組刻子。</string>
 
     <string name="Rule23_Name">天聽</string>
-    <string name="Rule23_Explain">配牌即聽牌，且叫聽後不能換牌。門清、不求不能算，可以加計自摸。</string>
+    <string name="Rule23_Explain">配牌即聽牌，且叫聽後不能換牌。門清、不求、天胡、地胡、地聽、獨聽不能算，可以加計自摸。</string>
 
     <string name="Rule24_Name">五暗刻</string>
     <string name="Rule24_Explain">胡牌時，手牌裡有五組刻子。</string>
@@ -340,19 +342,22 @@
     <string name="Rule29_Explain">拿到全部八張花牌時，應完成補牌動作，才可喊胡，三家通賠一底八台。補進之牌，若造成手牌胡牌者，應另加計。補進之牌，若手牌沒有胡牌者，不得亮牌。</string>
 
     <string name="Rule30_Name">天胡</string>
-    <string name="Rule30_Explain">莊家取完牌後，已經胡牌，稱為天胡。不得加計門自摸、門清、不求、天地聽。其餘另計。</string>
+    <string name="Rule30_Explain">莊家取完牌後，已經胡牌，稱為天胡。不得加計天聽、地聽、獨聽、地胡、人胡、門清、自摸、不求、半求、全求、搶槓、槓上開花、河底撈魚、海底撈月。其餘另計。</string>
 
     <string name="Rule31_Name">人胡</string>
-    <string name="Rule31_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，胡他人牌，算清16台，不得加計門清、天地聽。其餘另計。</string>
+    <string name="Rule31_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，胡他人牌，算清16台，不得加計天聽、地聽、天胡、地胡、門清。其餘另計。</string>
 
     <string name="Rule32_Name">地胡</string>
-    <string name="Rule32_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，閒家於此巡內第一次摸牌即自摸胡，算清16台，不得加計自摸、門清、不求、天地聽。其餘另計。</string>
+    <string name="Rule32_Explain">配牌後，第一巡內，無發生吃、碰、明槓之情況，閒家於此巡內第一次摸牌即自摸胡，算清16台，不得加計自摸、門清、不求、天聽、地聽、天胡、人胡。其餘另計。</string>
 
     <string name="Rule33_Name">大四喜</string>
     <string name="Rule33_Explain">手牌(含已露牌)有風牌之4種刻(槓)子，不分明暗，算清16台，不得加計門風、圈風台。 其餘另計。</string>
 
     <string name="Rule34_Name">連莊</string>
     <string name="Rule34_Explain">連續贏兩次填一</string>
+
+    <string name="Rule35_Name">莊家</string>
+
 
 
     <string name="pref_title_social_recommendations">Enable social recommendations</string>

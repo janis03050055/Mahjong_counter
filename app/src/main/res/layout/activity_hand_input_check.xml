@@ -10,21 +10,25 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".HandInputCheck">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <CheckBox
                 android:id="@+id/checkBox_Rule30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule30_Name"
-                android:textSize="24dpsp" />
+                android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule32_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule31"
                 android:layout_width="wrap_content"
@@ -33,22 +37,26 @@
                 android:textSize="18sp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linearlayout_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <CheckBox
                 android:id="@+id/checkBox_Rule23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule23_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule18_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule9"
                 android:layout_width="wrap_content"
@@ -57,21 +65,25 @@
                 android:textSize="18sp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <CheckBox
                 android:id="@+id/checkBox_Rule2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule2_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule10_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule15"
                 android:layout_width="wrap_content"
@@ -80,15 +92,18 @@
                 android:textSize="18sp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <CheckBox
                 android:id="@+id/checkBox_Rule4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule4_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule5"
                 android:layout_width="wrap_content"
@@ -100,12 +115,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <CheckBox
                 android:id="@+id/checkBox_Rule7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule7_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule11"
                 android:layout_width="wrap_content"
@@ -113,15 +130,18 @@
                 android:text="@string/Rule11_Name"
                 android:textSize="18sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <CheckBox
                 android:id="@+id/checkBox_Rule12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule12_Name"
                 android:textSize="18sp" />
+
             <CheckBox
                 android:id="@+id/checkBox_Rule13"
                 android:layout_width="wrap_content"
@@ -129,6 +149,7 @@
                 android:text="@string/Rule13_Name"
                 android:textSize="18sp" />
         </LinearLayout>
+
         <CheckBox
             android:id="@+id/checkBox_Rule1"
             android:layout_width="wrap_content"
@@ -142,34 +163,56 @@
             android:layout_height="wrap_content"
             android:text="@string/Rule3_Name"
             android:textSize="18sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkBox_Rule35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Rule35_Name"
+                android:textSize="18sp" />
             <CheckBox
                 android:id="@+id/checkBox_Rule34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Rule34_Name"
                 android:textSize="18sp" />
+
             <EditText
                 android:id="@+id/editText_Rule34"
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/Rule34_Explain"
-                android:inputType="number"/>
+                android:inputType="number" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/time"
                 android:textColor="#000"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/explain"
+            android:textColor="@color/colorAccent"
+
+            android:textSize="21sp" />
+        <TextView
+            android:id="@+id/textView_Explain"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="@string/explain_detail"
+            android:textColor="#000"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/b_NextStep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
             android:text="@string/NextStep" />
 
     </LinearLayout>
