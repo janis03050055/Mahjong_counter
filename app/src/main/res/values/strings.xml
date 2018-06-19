@@ -273,13 +273,13 @@
     <string name="Rule6_Explain">拿到相對應的花牌，可以獲得一台喔！對應的方式如下：東風位(春、梅) | 南風位(夏、蘭) | 西風位(秋、菊) | 北風位(冬、竹)</string>
 
     <string name="Rule7_Name">搶槓</string>
-    <string name="Rule7_Explain">聽牌時，因別人加槓而加槓的那張牌，恰巧是可以胡的牌。</string>
+    <string name="Rule7_Explain">如果別人要槓的牌，剛好是自己聽的牌，則可搶槓胡牌，獲得一台。搶槓胡牌是算在槓的人頭上!</string>
 
     <string name="Rule8_Name">三元牌</string>
     <string name="Rule8_Explain">只要組成紅中、發財、白板任何一種坎子(三張相同)或槓子(四張相同)，就可獲得1台。</string>
 
     <string name="Rule9_Name">獨聽</string>
-    <string name="Rule9_Explain">邊張、中洞、單吊。</string>
+    <string name="Rule9_Explain">邊張(聽的是順子的其中一邊)、中洞(只聽一組順子中間空下來的牌)、單吊(單聽一副對子)。</string>
 
     <string name="Rule10_Name">半求</string>
     <string name="Rule10_Explain">手牌只剩一張牌單吊自摸，而其餘全吃或碰。</string>
@@ -291,13 +291,13 @@
     <string name="Rule12_Explain">胡別人丟出的最後一張牌。</string>
 
     <string name="Rule13_Name">海底撈月</string>
-    <string name="Rule13_Explain">摸牌牆最後一張牌，而自摸者多計一台。因摸到花牌或加槓造成其結果為最後一張牌時，亦以海底撈月計之。</string>
+    <string name="Rule13_Explain">麻將每局都規定需要留下最後的16張牌，這16張通稱叫做海底，海底前未分出勝負就是流局。只要摸到海底前的最後一張牌並且自摸，就叫做海底撈月，可以多獲得一台。別家摸到海底而放砲，也能算海底撈月。</string>
 
     <string name="Rule14_Name">平胡</string>
-    <string name="Rule14_Explain">胡牌由五組順子及一個對子組成，胡他人牌非自摸。牌中無字、花牌、呈兩面聽狀態。釣將不算。</string>
+    <string name="Rule14_Explain">胡牌由五組順子及一個對子組成，胡他人牌非自摸。、無花、無字、無坎(三張相同)、非中洞、非邊張、非單釣、非自摸，允許門清加1台。</string>
 
     <string name="Rule15_Name">全求</string>
-    <string name="Rule15_Explain">手牌只剩一張牌單吊胡牌，而其餘全吃或碰，且胡他人牌。</string>
+    <string name="Rule15_Explain">胡牌時，手牌全部都已經吃碰放在外面，只剩最後一張牌在手，由其他任一家放炮而胡牌。</string>
 
     <string name="Rule16_Name">花槓</string>
     <string name="Rule16_Explain">胡牌時門前有『梅蘭竹菊』或『春夏秋冬』任一組。</string>
@@ -357,7 +357,13 @@
     <string name="Rule34_Explain">連續贏兩次填一</string>
 
     <string name="Rule35_Name">莊家</string>
+    <string name="Rule35_Explain">如果你自己是莊家而自摸，則各家要多給你一台的錢，就是莊家台；如果是莊家放炮給你胡，則莊家也要多付一台的錢給你。</string>
 
+    <string name="Rule36_Name">宣告聽牌</string>
+    <string name="Rule36_Explain">宣告聽牌後，即不能再換牌，如能胡牌，再多加一台。</string>
+
+    <string name="Rule37_Name">莊家放槍</string>
+    <string name="Rule37_Explain">莊家要賠很多錢啦~~~~</string>
 
 
     <string name="pref_title_social_recommendations">Enable social recommendations</string>

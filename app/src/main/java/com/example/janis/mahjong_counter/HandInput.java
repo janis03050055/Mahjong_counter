@@ -16,8 +16,8 @@ public class HandInput extends AppCompatActivity {
     private int[][] mahjong = new int[5][9]; //[種類][細分]=數量
     //台數計算
     private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+    private int[] rulescore_get = new int[36];
     private List<String> taiscore_explain = new ArrayList<>();
-    private int tai = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -333,19 +333,19 @@ public class HandInput extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch(group.getCheckedRadioButtonId()){
                     case R.id.radioButton_b3_0:
-                        mahjong[0][0] = 0;
+                        mahjong[0][2] = 0;
                         break;
                     case R.id.radioButton_b3_1:
-                        mahjong[0][0] = 1;
+                        mahjong[0][2] = 1;
                         break;
                     case R.id.radioButton_b3_2:
-                        mahjong[0][0] = 2;
+                        mahjong[0][2] = 2;
                         break;
                     case R.id.radioButton_b3_3:
-                        mahjong[0][0] = 3;
+                        mahjong[0][2] = 3;
                         break;
                     case R.id.radioButton_b3_4:
-                        mahjong[0][0] = 4;
+                        mahjong[0][2] = 4;
                         break;
                 }
             }
@@ -497,19 +497,19 @@ public class HandInput extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch(group.getCheckedRadioButtonId()){
                     case R.id.radioButton_t1_0:
-                        mahjong[1][1] = 0;
+                        mahjong[1][0] = 0;
                         break;
                     case R.id.radioButton_t1_1:
-                        mahjong[1][1] = 1;
+                        mahjong[1][0] = 1;
                         break;
                     case R.id.radioButton_t1_2:
-                        mahjong[1][1] = 2;
+                        mahjong[1][0] = 2;
                         break;
                     case R.id.radioButton_t1_3:
-                        mahjong[1][1] = 3;
+                        mahjong[1][0] = 3;
                         break;
                     case R.id.radioButton_t1_4:
-                        mahjong[1][1] = 4;
+                        mahjong[1][0] = 4;
                         break;
                 }
             }
@@ -541,19 +541,19 @@ public class HandInput extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch(group.getCheckedRadioButtonId()){
                     case R.id.radioButton_t3_0:
-                        mahjong[1][1] = 0;
+                        mahjong[1][2] = 0;
                         break;
                     case R.id.radioButton_t3_1:
-                        mahjong[1][1] = 1;
+                        mahjong[1][2] = 1;
                         break;
                     case R.id.radioButton_t3_2:
-                        mahjong[1][1] = 2;
+                        mahjong[1][2] = 2;
                         break;
                     case R.id.radioButton_t3_3:
-                        mahjong[1][1] = 3;
+                        mahjong[1][2] = 3;
                         break;
                     case R.id.radioButton_t3_4:
-                        mahjong[1][1] = 4;
+                        mahjong[1][2] = 4;
                         break;
                 }
             }
@@ -982,16 +982,20 @@ public class HandInput extends AppCompatActivity {
 
                 //debug 用
                 String j;
+                int k = 0;
                 for(int i = 0;i<taiscore_explain.size();i++){
                     j = taiscore_explain.get( i );
+                    k = rulescore_get[i];
                     Log.d("台數詳解",j);
+                    Log.d("台數總計",String.valueOf(k));
                 }
-                Log.d("台數總計",String.valueOf(tai));
+
 
                 //傳送詳細台數及台數名稱
                 Intent intent = new Intent(HandInput.this, HandInputCheck.class);
                 intent.putStringArrayListExtra("taiscore_explain", (ArrayList<String>) taiscore_explain);
-                intent.putExtra("tai",tai);
+                intent.putExtra("rulescore_get",rulescore_get);//實際獲得台數
+                intent.putExtra("rulescore",rulescore);//規定台數
                 startActivity(intent);
 
             }
@@ -1001,27 +1005,27 @@ public class HandInput extends AppCompatActivity {
     private void  totalTai(){
         //tai表示台數，符合該方法則台數相加
         int Rule_count = 0;
-        boolean R_29 = false, R_19 = false, R_20 = false, R_7 = false, R_26 = false;
+        boolean R_29 = false, R_19 = false, R_20 = false, R_7 = false, R_26 = false, R_14 = false;
 
         //Rule6:花牌(順風順花順季)，EX:東春梅、南夏蘭。算一台。by豐
         //東風春梅
         if(mahjong[4][8] == 0 && mahjong[4][0] == 1 && mahjong[4][4] == 1){
-            tai = tai + rulescore[5];
+            rulescore_get[5] = rulescore[5];
             taiscore_explain.add(getResources().getString(R.string.Rule6_Name) + rulescore[5] + "台；");
         }
         //南風夏蘭
         else if(mahjong[4][8] == 1 && mahjong[4][1] == 1 && mahjong[4][5] == 1){
-            tai = tai + rulescore[5];
+            rulescore_get[5] = rulescore[5];
             taiscore_explain.add(getResources().getString(R.string.Rule6_Name) + rulescore[5] + "台；");
         }
         //西風秋竹
         else if(mahjong[4][8] == 2 && mahjong[4][2] == 1 && mahjong[4][6] == 1){
-            tai = tai + rulescore[5];
+            rulescore_get[5] = rulescore[5];
             taiscore_explain.add(getResources().getString(R.string.Rule6_Name) + rulescore[5] + "台；");
         }
         //北風冬菊
         else if(mahjong[4][8] == 3 && mahjong[4][3] == 1 && mahjong[4][7] == 1){
-            tai = tai +rulescore[5];
+            rulescore_get[5] = rulescore[5];
             taiscore_explain.add(getResources().getString(R.string.Rule6_Name) + rulescore[5] + "台；");
         }
 
@@ -1035,7 +1039,7 @@ public class HandInput extends AppCompatActivity {
             }
         }
         if(Rule_count == 8){
-            tai = tai + rulescore[28];
+            rulescore_get[28] = rulescore[28];
             taiscore_explain.add(getResources().getString(R.string.Rule29_Name) + rulescore[28] + "台；");
             R_29 = true ;
         }
@@ -1043,7 +1047,7 @@ public class HandInput extends AppCompatActivity {
         //Rule16:花槓，胡牌時門前有『梅蘭竹菊』或『春夏秋冬』任一組。by豐
         //八仙過海與花槓不可累計
         if(((mahjong[4][0] == 1 && mahjong[4][1] == 1 && mahjong[4][2] == 1&& mahjong[4][3] == 1) ||(mahjong[4][4] == 1 && mahjong[4][5] == 1 && mahjong[4][6] == 1&& mahjong[4][7] == 1)) && !R_29 ){
-            tai = tai + rulescore[15];
+            rulescore_get[15] = rulescore[15];
             taiscore_explain.add(getResources().getString(R.string.Rule16_Name) + rulescore[15] + "台；");
         }
 
@@ -1062,7 +1066,7 @@ public class HandInput extends AppCompatActivity {
             }
         }
         if(Rule_count == 5 && R_19){
-            tai = tai + rulescore[18];
+            rulescore_get[18] = rulescore[18];
             taiscore_explain.add(getResources().getString(R.string.Rule19_Name) + rulescore[18] + "台；");
         }
 
@@ -1081,13 +1085,13 @@ public class HandInput extends AppCompatActivity {
         }
 
         if(Rule_count == 5){ //Rule24:五暗刻
-            tai = tai + rulescore[23];
+            rulescore_get[23] = rulescore[23];
             taiscore_explain.add(getResources().getString(R.string.Rule24_Name) + rulescore[23] + "台；");
         }else if(Rule_count == 4){ //Rule22:四暗刻
-            tai = tai + rulescore[21];
-            taiscore_explain.add(getResources().getString(R.string.Rule21_Name) + rulescore[20] + "台；");
+            rulescore_get[21] = rulescore[21];
+            taiscore_explain.add(getResources().getString(R.string.Rule21_Name) + rulescore[21] + "台；");
         }else if(Rule_count == 3){ //Rule17:三暗刻
-            tai = tai + rulescore[16];
+            rulescore_get[16] = rulescore[16];
             taiscore_explain.add(getResources().getString(R.string.Rule17_Name) + rulescore[16] + "台；");
         }
 
@@ -1108,13 +1112,13 @@ public class HandInput extends AppCompatActivity {
             }
         }
         if(Rule_count == 3){ //Rule25:大三元，台數加八
-            tai = tai + rulescore[24];
+            rulescore_get[24] = rulescore[24];
             taiscore_explain.add(getResources().getString(R.string.Rule25_Name) + rulescore[24] + "台；");
         }else if(Rule_count == 2 && R_20){//Rule20:小三元，台數加四
-            tai = tai + rulescore[19];
+            rulescore_get[19] = rulescore[19];
             taiscore_explain.add(getResources().getString(R.string.Rule20_Name) + rulescore[19] + "台；");
         }else if (R_7){//Rule8:三元牌
-            tai = tai + rulescore[7];
+            rulescore_get[7] = rulescore[7];
             taiscore_explain.add(getResources().getString(R.string.Rule8_Name) + rulescore[7] + "台；");
         }
 
@@ -1129,12 +1133,13 @@ public class HandInput extends AppCompatActivity {
                 R_26 = true;
             }
         }
-        if(Rule_count == 4){  //Rule33:大四喜，台數加十六
-            tai = tai + rulescore[32];
-            taiscore_explain.add(getResources().getString(R.string.Rule33_Name) + rulescore[32] + "台；");
-        }else if(Rule_count == 4 && R_26){//Rule26:小四喜，台數加八
-            tai = tai + rulescore[25];
+
+        if(Rule_count == 4 && R_26){//Rule26:小四喜，台數加八
+            rulescore_get[25] = rulescore[25];
             taiscore_explain.add(getResources().getString(R.string.Rule26_Name) + rulescore[25] + "台；");
+        }else if(Rule_count == 4){  //Rule33:大四喜，台數加十六
+            rulescore_get[25] = rulescore[25];
+            taiscore_explain.add(getResources().getString(R.string.Rule33_Name) + rulescore[32] + "台；");
         }
 
 
@@ -1151,7 +1156,7 @@ public class HandInput extends AppCompatActivity {
                 }
             }
             if(Rule_count > 16){
-                tai = tai + rulescore[20];
+                rulescore_get[20] = rulescore[20];
                 taiscore_explain.add(getResources().getString(R.string.Rule21_Name) + rulescore[20] + "台；");
             }
             Rule_count = 0;
@@ -1168,7 +1173,7 @@ public class HandInput extends AppCompatActivity {
                 }
             }
             if(Rule_count > 16){//假設大於17就代表全部都是同一花色
-                tai = tai + rulescore[26];
+                rulescore_get[26] = rulescore[26];
                 taiscore_explain.add(getResources().getString(R.string.Rule27_Name) + rulescore[26] + "台；");
             }
             Rule_count = 0;//每一種花色都要歸零重算
@@ -1183,27 +1188,31 @@ public class HandInput extends AppCompatActivity {
             }
         }
         if(Rule_count >16){
-            tai = tai + rulescore[27];
+            rulescore_get[27] = rulescore[27];
             taiscore_explain.add(getResources().getString(R.string.Rule28_Name) + rulescore[27] + "台；");
         }
 
 
         //Rule14:平胡，胡牌由五組順子及一個對子組成，胡他人牌非自摸。牌中無字、花牌、呈兩面聽狀態。釣將不算。
-        for(int i=0;i<4;i++){    //萬筒條
+        for(int i=0;i<5;i++){    //萬筒條
             for(int j=0;j<9;j++){
-                //至少一個
-                if(j<7 && mahjong[i][j]!=0 && mahjong[i][j+1] != 0 && mahjong[i][j+2] !=0){
-                    Rule_count = Rule_count + 1;
-                    mahjong[i][j] = mahjong[i][j] - 1;
-                    mahjong[i][j+1] = mahjong[i][j+1] - 1;
-                    mahjong[i][j+2] = mahjong[i][j+2] - 1;
+                //無字無花無刻子
+                if(mahjong[i][j] != 3 && mahjong[4][j] == 0 && mahjong[3][j] == 0){
+                    if(i<3 && j<7 && mahjong[i][j]!=0 && mahjong[i][j+1] != 0 && mahjong[i][j+2] !=0){
+                        Rule_count = Rule_count + 1;
+                        mahjong[i][j] = mahjong[i][j] - 1;
+                        mahjong[i][j+1] = mahjong[i][j+1] - 1;
+                        mahjong[i][j+2] = mahjong[i][j+2] - 1;
+                    }else if(mahjong[i][j] == 2){
+                        R_14 = true;
+                    }
                 }
 
-                if(Rule_count == 5 && mahjong[i][j] == 2){
-                    tai = tai +rulescore[13];//台數加二台
-                    taiscore_explain.add(getResources().getString(R.string.Rule14_Name) + rulescore[13] + "台；");
-                }
             }
+        }
+        if(Rule_count == 5 && R_14 ){
+            rulescore_get[13] = rulescore[13];//台數加二台
+            taiscore_explain.add(getResources().getString(R.string.Rule14_Name) + rulescore[13] + "台；");
         }
     }
 }
