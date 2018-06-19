@@ -69,6 +69,7 @@ public class HandInput extends AppCompatActivity {
         RadioGroup rg_lan = findViewById(R.id.radioButton_group_lan);
         RadioGroup rg_bamboo = findViewById(R.id.radioButton_group_bamboo);
         RadioGroup rg_orange = findViewById(R.id.radioButton_group_orange);
+        RadioGroup rg_wind = findViewById(R.id.radioButton_group_wind);
 
         Button b_next_step = findViewById(R.id.b_NextStep);
 
@@ -971,6 +972,25 @@ public class HandInput extends AppCompatActivity {
             }
         });
 
+        rg_wind.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch(group.getCheckedRadioButtonId()){
+                    case R.id.radioButton_windeast:
+                        mahjong[4][8] = 0;
+                        break;
+                    case R.id.radioButton_windwest:
+                        mahjong[4][8] = 1;
+                        break;
+                    case R.id.radioButton_windsouth:
+                        mahjong[4][8] = 2;
+                        break;
+                    case R.id.radioButton_windnorth:
+                        mahjong[4][8] = 3;
+                        break;
+                }
+            }
+        });
 
         //下一步
         b_next_step.setOnClickListener(new View.OnClickListener() {

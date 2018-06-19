@@ -24,7 +24,8 @@
         <activity android:name=".PickImageFromGallery" />
         <activity android:name=".TakePicture" />
         <activity android:name=".HandInput" />
-        <activity android:name=".HandInputCheck"></activity>
+        <activity android:name=".HandInputCheck" />
+        <activity android:name=".Information_pay"></activity>
     </application>
 
 </manifest>

@@ -19,7 +19,11 @@
     <string name="time">次</string>
     <string name="explain">麻將術語解釋</string>
     <string name="explain_detail">麻將術語詳細解釋</string>
-
+    <string name="pay_normal">各家要給：</string>
+    <string name="pay_gun">放槍要給：</string>
+    <string name="pay_home">莊家要給：</string>
+    <string name="keep_earn_money">繼續賺錢！</string>
+    <string name="information_pay_title">所以你賺了多少</string>
     //麻將
     <string name="w1">一萬</string>
     <string name="w2">二萬</string>
@@ -63,10 +67,12 @@
     <string name="lan">蘭</string>
     <string name="bamboo">竹</string>
     <string name="orange">菊</string>
+    <string name="wind">風位</string>
     <string name="windeast">風位東</string>
     <string name="windwest">風位西</string>
     <string name="windsouth">風位南</string>
     <string name="windnorth">風位北</string>
+
 
     <string-array name="mahjong">
         <item>@string/w1</item>

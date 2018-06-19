@@ -763,6 +763,12 @@ public class HandInputCheck extends AppCompatActivity {
                     Log.d("台數詳解勾選",j);
                 }
                 // Log.d("台數總計公選",String.valueOf(tai));
+                //傳送詳細台數及台數名稱
+                Intent intent = new Intent(HandInputCheck.this, Information_pay.class);
+                intent.putStringArrayListExtra("taiscore_explain", (ArrayList<String>) taiscore_explain);
+                intent.putExtra("rulescore_get",rulescore_get);//實際獲得台數
+                intent.putExtra("rulescore",rulescore);//規定台數
+                startActivity(intent);
             }
         });
     }
