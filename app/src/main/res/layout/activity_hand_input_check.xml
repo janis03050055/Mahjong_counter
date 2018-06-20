@@ -244,7 +244,7 @@
         <TextView
             android:id="@+id/textView_Explain"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="170dp"
             android:text="@string/explain_detail"
             android:textColor="#000"
             android:textSize="18sp" />

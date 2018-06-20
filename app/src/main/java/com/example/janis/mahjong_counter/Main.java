@@ -14,6 +14,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,10 +22,11 @@ import java.util.ArrayList;
 
 
 public class Main extends AppCompatActivity {
+    ImageButton Setting;
     Button SelectPicture, TakePicture, HandInput;
     EditText editTextBaseScore , editTextMoreScore;
     TextView BaseScoreName, MoreScoreName;
-    Uri ImageUri, TakePictureUri; //圖片位址
+    Uri ImageUri; //圖片位址
     View vMainView;
     int baseScore = -1, moreScore = -1, textSum = 0;
     private static final int PICK_IMAGE = 100; //點選返回也可重新選擇圖片
@@ -41,6 +43,7 @@ public class Main extends AppCompatActivity {
         editTextMoreScore = findViewById(R.id.editText_MoreScoreNumber);//台
         BaseScoreName = findViewById(R.id.textView_BaseScoreName);
         MoreScoreName = findViewById(R.id.textView_MoreScoreName);
+        Setting = findViewById(R.id.b_Setting);
 
         //拍照相關按鈕事件
         TakePicture.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +78,15 @@ public class Main extends AppCompatActivity {
                     startActivity(intent);
                 }
 
+            }
+        });
+
+        //設定相關
+        Setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent setting = new Intent(Main.this, SettingsActivity.class);
+                startActivity(setting);
             }
         });
 

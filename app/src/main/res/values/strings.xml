@@ -76,108 +76,14 @@
     <string name="windnorth">風位北</string>
 
 
-    <string-array name="mahjong">
-        <item>@string/w1</item>
-        <item>@string/w2</item>
-        <item>@string/w3</item>
-        <item>@string/w4</item>
-        <item>@string/w5</item>
-        <item>@string/w6</item>
-        <item>@string/w7</item>
-        <item>@string/w8</item>
-        <item>@string/w9</item>
-        <item>@string/b1</item>
-        <item>@string/b2</item>
-        <item>@string/b3</item>
-        <item>@string/b4</item>
-        <item>@string/b5</item>
-        <item>@string/b6</item>
-        <item>@string/b7</item>
-        <item>@string/b8</item>
-        <item>@string/b9</item>
-        <item>@string/t1</item>
-        <item>@string/t2</item>
-        <item>@string/t3</item>
-        <item>@string/t4</item>
-        <item>@string/t5</item>
-        <item>@string/t6</item>
-        <item>@string/t7</item>
-        <item>@string/t8</item>
-        <item>@string/t9</item>
-        <item>@string/east</item>
-        <item>@string/south</item>
-        <item>@string/west</item>
-        <item>@string/north</item>
-        <item>@string/redmiddle</item>
-        <item>@string/whiteboard</item>
-        <item>@string/greenrich</item>
-        <item>@string/spring</item>
-        <item>@string/summer</item>
-        <item>@string/fall</item>
-        <item>@string/winter</item>
-        <item>@string/plum</item>
-        <item>@string/lan</item>
-        <item>@string/bamboo</item>
-        <item>@string/orange</item>
-    </string-array>
 
-    //麻將圖片
-    <string-array name="mahjongImage">
-        //萬
-        <item>https://imageshack.com/a/img922/2383/A0dsui.png</item>
-        <item>https://imageshack.com/a/img921/840/hJLU2i.png</item>
-        <item>https://imageshack.com/a/img924/3485/bkAIy5.png</item>
-        <item>https://imageshack.com/a/img924/3252/e84vkK.png</item>
-        <item>https://imageshack.com/a/img923/1863/ftiXH0.png</item>
-        <item>https://imageshack.com/a/img924/5532/2mZcPa.png</item>
-        <item>https://imageshack.com/a/img923/7600/NxwQl2.png</item>
-        <item>https://imageshack.com/a/img924/8693/QY5GVO.png</item>
-        <item>https://imageshack.com/a/img921/9474/0uJ1EX.png</item>
-        //條
-        <item>https://imageshack.com/a/img921/6808/rGDoPX.png</item>
-        <item>https://imageshack.com/a/img924/4282/A2SG9v.png</item>
-        <item>https://imageshack.com/a/img923/6972/LbZO74.png</item>
-        <item>https://imageshack.com/a/img922/9827/PLOyGt.png</item>
-        <item>https://imageshack.com/a/img922/7343/b73JPo.png</item>
-        <item>https://imageshack.com/a/img921/9375/l1fFgJ.png</item>
-        <item>https://imageshack.com/a/img921/6743/k7YJyO.png</item>
-        <item>https://imageshack.com/a/img922/5466/sHpcr5.png</item>
-        <item>https://imageshack.com/a/img924/3552/vKK5lD.png</item>
-        //筒
-        <item>https://imageshack.com/a/img924/7585/5DnQ2t.png</item>
-        <item>https://imageshack.com/a/img924/4274/6P6GoQ.png</item>
-        <item>https://imageshack.com/a/img924/1628/bAc6bb.png</item>
-        <item>https://imageshack.com/a/img922/4972/RPCHVo.png</item>
-        <item>https://imageshack.com/a/img922/1523/QEeVLq.png</item>
-        <item>https://imageshack.com/a/img923/8729/RFhcGA.png</item>
-        <item>https://imageshack.com/a/img923/609/f7qQst.png</item>
-        <item>https://imageshack.com/a/img922/1856/Xg9gvG.png</item>
-        <item>https://imageshack.com/a/img923/2923/ie2BA7.png</item>
-        //風
-        <item>https://imageshack.com/a/img921/7564/V2bDvw.png</item>
-        <item>https://imageshack.com/a/img924/3443/8lcDX0.png</item>
-        <item>https://imageshack.com/a/img923/4117/gTpqP8.png</item>
-        <item>https://imageshack.com/a/img922/8493/twMbrH.png</item>
-        //雜
-        <item>https://imageshack.com/a/img923/6657/CIayyX.png</item>
-        <item>https://imageshack.com/a/img922/4909/YQkkH6.png</item>
-        <item>https://imageshack.com/a/img924/9609/ws6HCy.png</item>
-        //缺春夏秋冬!!花
-        <item>https://imageshack.com/a/img921/672/HoTOmO.png</item>
-        <item>https://imageshack.com/a/img923/3566/mAtQ6Z.png</item>
-        <item>https://imageshack.com/a/img922/4157/iI0SjF.png</item>
-        <item>https://imageshack.com/a/img922/3707/fnxfLz.png</item>
-        <item>https://imageshack.com/a/img921/3923/5rMH6M.png</item>
-        <item>https://imageshack.com/a/img923/9027/0Sz4YJ.png</item>
-        <item>https://imageshack.com/a/img923/6089/OpGdBH.png</item>
-        <item>https://imageshack.com/a/img922/127/qpWIh7.png</item>
-    </string-array>
     <string name="MoreScore_1">一台</string>
     <string name="MoreScore_2">兩台</string>
     <string name="MoreScore_4">四台</string>
     <string name="MoreScore_5">五台</string>
     <string name="MoreScore_8">八台</string>
     <string name="MoreScore_16">十六台</string>
+    <string name="MoreScore_24">二十四台</string>
 
     <string name="Majongnum_0">0</string>
     <string name="Majongnum_1">1</string>
@@ -429,5 +335,22 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
 
 </resources>
