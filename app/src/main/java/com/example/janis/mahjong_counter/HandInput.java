@@ -15,8 +15,8 @@ public class HandInput extends AppCompatActivity {
 
     private int[][] mahjong = new int[5][9]; //[種類][細分]=數量
     //台數計算
-    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100};
-    private int[] rulescore_get = new int[37];
+    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100,1};
+    private int[] rulescore_get = new int[38];
     private List<String> taiscore_explain = new ArrayList<>();
     private int baseScore, moreScore;
     @Override
@@ -1116,7 +1116,7 @@ public class HandInput extends AppCompatActivity {
             taiscore_explain.add(getResources().getString(R.string.Rule24_Name) + rulescore[23] + "台；");
         }else if(Rule_count == 4){ //Rule22:四暗刻
             rulescore_get[21] = rulescore[21];
-            taiscore_explain.add(getResources().getString(R.string.Rule21_Name) + rulescore[21] + "台；");
+            taiscore_explain.add(getResources().getString(R.string.Rule22_Name) + rulescore[21] + "台；");
         }else if(Rule_count == 3){ //Rule17:三暗刻
             rulescore_get[16] = rulescore[16];
             taiscore_explain.add(getResources().getString(R.string.Rule17_Name) + rulescore[16] + "台；");
@@ -1134,7 +1134,7 @@ public class HandInput extends AppCompatActivity {
             if(mahjong[3][i]==2){//用來計算對子
                 R_20 = true;
             }
-            if(mahjong[3][i] !=0){
+            if(mahjong[3][i] >2){
                 R_7 = true;
             }
         }

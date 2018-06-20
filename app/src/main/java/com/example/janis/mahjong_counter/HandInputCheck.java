@@ -843,7 +843,7 @@ public class HandInputCheck extends AppCompatActivity {
         }
         //門清一摸三
         if(ck_R1.isChecked() && ck_R3.isChecked()){
-            taiscore_explain.remove(getResources().getString(R.string.Rule24_Name) + rulescore[37] + "台；");
+            taiscore_explain.add(getResources().getString(R.string.Rule38_Name) + rulescore[37] + "台；");
             rulescore_get[37] = rulescore[37];
         }
 

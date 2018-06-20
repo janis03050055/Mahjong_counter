@@ -15,7 +15,7 @@ import java.util.List;
 
 public class Information_pay extends AppCompatActivity {
     private List<String> taiscore_explain = new ArrayList<>();//放槍的人台數說明
-    private int[] rulescore_get = new int[37];
+    private int[] rulescore_get = new int[38];
     private int baseScore = 0, moreScore = 0;
     private  int pay_tai = 0, pay_money = 0;
     private ImageButton ib_explain;
@@ -37,8 +37,9 @@ public class Information_pay extends AppCompatActivity {
         b_start = findViewById(R.id.b_start);
 
 
-        for(int i = 0;i<rulescore_get.length-1;i++){
-            pay_tai = pay_tai + rulescore_get[i];
+        for(int i = 0;i<rulescore_get.length;i++){
+            if(i != 36) //莊家放槍不算台
+                pay_tai = pay_tai + rulescore_get[i];
         }
 
         //莊家贏
