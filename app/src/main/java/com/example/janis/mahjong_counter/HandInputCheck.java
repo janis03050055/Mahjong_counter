@@ -29,6 +29,7 @@ public class HandInputCheck extends AppCompatActivity {
     private CheckBox ck_R1, ck_R2, ck_R3, ck_R4, ck_R5, ck_R7, ck_R9, ck_R10, ck_R11, ck_R12, ck_R13, ck_R17, ck_R15, ck_R18, ck_R22, ck_R23, ck_R24, ck_R30, ck_R31, ck_R32,ck_R34, ck_R35, ck_R36, ck_R37;
     private Button b_NextStep;
     private EditText et_R34;
+    private int baseScore = 0, moreScore = 0;
     //private int tai = 0, tai_home = 0, tai_other = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class HandInputCheck extends AppCompatActivity {
         taiscore_explain = getIntent().getStringArrayListExtra("taiscore_explain");
         rulescore_get = getIntent().getIntArrayExtra("rulescore_get");
         rulescore = getIntent().getIntArrayExtra("rulescore");
+        baseScore = getIntent().getIntExtra("baseScore",0 );
+        moreScore = getIntent().getIntExtra("moreScore",0 );
         tv_Explain = findViewById(R.id.textView_Explain);
         b_NextStep = findViewById(R.id.b_NextStep);
 
@@ -810,6 +813,9 @@ public class HandInputCheck extends AppCompatActivity {
                 Intent intent = new Intent(HandInputCheck.this, Information_pay.class);
                 intent.putStringArrayListExtra("taiscore_explain", (ArrayList<String>) taiscore_explain);
                 intent.putExtra("rulescore_get",rulescore_get);//實際獲得台數
+                intent.putExtra("rulescore",rulescore);//規定台數
+                intent.putExtra("baseScore",baseScore);
+                intent.putExtra("moreScore",moreScore);
                 startActivity(intent);
             }
         });

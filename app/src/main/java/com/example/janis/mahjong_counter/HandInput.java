@@ -18,10 +18,15 @@ public class HandInput extends AppCompatActivity {
     private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100};
     private int[] rulescore_get = new int[37];
     private List<String> taiscore_explain = new ArrayList<>();
+    private int baseScore, moreScore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hand_input);
+
+        baseScore = getIntent().getIntExtra("baseScore",0 );
+        moreScore = getIntent().getIntExtra("moreScore",0 );
+
         //宣告
         RadioGroup rg_w1 = findViewById(R.id.radioButton_group_w1);
         RadioGroup rg_w2 = findViewById(R.id.radioButton_group_w2);
@@ -1016,6 +1021,8 @@ public class HandInput extends AppCompatActivity {
                 intent.putStringArrayListExtra("taiscore_explain", (ArrayList<String>) taiscore_explain);
                 intent.putExtra("rulescore_get",rulescore_get);//實際獲得台數
                 intent.putExtra("rulescore",rulescore);//規定台數
+                intent.putExtra("baseScore",baseScore);//實際獲得台數
+                intent.putExtra("moreScore",moreScore);//規定台數
                 startActivity(intent);
 
             }

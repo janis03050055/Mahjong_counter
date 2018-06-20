@@ -15,6 +15,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 //import android.support.design.widget.Snackbar;
 
 
@@ -24,7 +26,7 @@ public class Main extends AppCompatActivity {
     TextView BaseScoreName, MoreScoreName;
     Uri ImageUri, TakePictureUri; //圖片位址
     View vMainView;
-    int BaseScore = -1, MoreScore = -1, textSum = 0;
+    int baseScore = -1, moreScore = -1, textSum = 0;
     private static final int PICK_IMAGE = 100; //點選返回也可重新選擇圖片
 
     @Override
@@ -67,8 +69,10 @@ public class Main extends AppCompatActivity {
             public void onClick(View v) {
                 //底和台皆有輸入且合理就打開相簿
                 if(checkScore()){
-                    Intent gallery = new Intent(Main.this, HandInput.class);
-                    startActivity(gallery);
+                    Intent intent = new Intent(Main.this, HandInput.class);
+                    intent.putExtra("baseScore",baseScore);//實際獲得台數
+                    intent.putExtra("moreScore",moreScore);//規定台數
+                    startActivity(intent);
                 }
 
             }
@@ -92,8 +96,8 @@ public class Main extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 //輸入字串長度，假設沒輸入字則預設-1
                 textSum = s.toString().length();
-                if(textSum > 0)BaseScore = Integer.parseInt(editTextBaseScore.getText().toString());
-                else BaseScore = -1;
+                if(textSum > 0)baseScore = Integer.parseInt(editTextBaseScore.getText().toString());
+                else baseScore = -1;
             }
         });
         editTextMoreScore.addTextChangedListener(new TextWatcher() {
@@ -112,8 +116,8 @@ public class Main extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 //輸入字串長度，假設沒輸入字則預設-1
                 textSum = s.toString().length();
-                if(textSum > 0) MoreScore = Integer.parseInt(editTextMoreScore.getText().toString());
-                else  MoreScore = -1;
+                if(textSum > 0) moreScore = Integer.parseInt(editTextMoreScore.getText().toString());
+                else  moreScore = -1;
             }
         });
 
@@ -131,17 +135,17 @@ public class Main extends AppCompatActivity {
 
     //檢查所輸入底/台是否合理
     private boolean checkScore(){
-        if(BaseScore < 0 || MoreScore < 0 ){
+        if(baseScore < 0 || moreScore < 0 ){
             AlertDialog.Builder builder = new AlertDialog.Builder(Main.this);
             builder.setMessage(R.string.HowManyScore)
                     .setCancelable(false)
                     .setPositiveButton("了解", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             //將沒輸入的字變紅提醒使用者，底/台沒輸入或數字不合理
-                            if(BaseScore < 0) BaseScoreName.setTextColor(Color.RED);
+                            if(baseScore < 0) BaseScoreName.setTextColor(Color.RED);
                             else BaseScoreName.setTextColor(Color.BLACK);
 
-                            if(MoreScore < 0) MoreScoreName.setTextColor(Color.RED);
+                            if(moreScore < 0) MoreScoreName.setTextColor(Color.RED);
                             else MoreScoreName.setTextColor(Color.BLACK);
 
                         }
