@@ -1211,7 +1211,7 @@ public class HandInput extends AppCompatActivity {
         Rule_count =  0;
         for(int i = 0;i<7;i++){
             if(mahjong[3][i]>0){
-                Rule_count = Rule_count + 1;
+                Rule_count = Rule_count + mahjong[3][i];
             }
         }
         if(Rule_count >16){
