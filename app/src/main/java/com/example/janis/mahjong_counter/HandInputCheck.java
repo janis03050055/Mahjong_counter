@@ -197,7 +197,6 @@ public class HandInputCheck extends AppCompatActivity {
                     rulescore_get[34] = rulescore[34];
                 }else{
                     ck_R37.setEnabled(true);
-                    ck_R37.setChecked(true);
                     taiscore_explain.remove(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
                     rulescore_get[36] = 0;
                 }
@@ -216,7 +215,6 @@ public class HandInputCheck extends AppCompatActivity {
                     taiscore_explain.add(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
                 }else{
                     ck_R35.setEnabled(true);
-                    ck_R35.setChecked(true);
                     rulescore_get[36] = 0;
                     rulescore_get[34] = 0;
                     taiscore_explain.remove(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
