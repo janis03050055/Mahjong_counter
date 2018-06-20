@@ -279,6 +279,9 @@
     <string name="Rule37_Name">莊家放槍</string>
     <string name="Rule37_Explain">莊家要賠很多錢啦~~~~</string>
 
+    <string name="Rule38_Name">門清一摸三</string>
+    <string name="Rule38_Explain">莊家要賠很多錢啦~~~~</string>
+
 
     <string name="pref_title_social_recommendations">Enable social recommendations</string>
     <string name="pref_description_social_recommendations">Recommendations for people to contact

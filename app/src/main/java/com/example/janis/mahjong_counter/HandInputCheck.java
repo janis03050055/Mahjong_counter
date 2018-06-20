@@ -23,8 +23,8 @@ public class HandInputCheck extends AppCompatActivity {
     private List<String> taiscore_explain = new ArrayList<>();//放槍的人台數說明
     private List<String> taiscore_homeexplain_win = new ArrayList<>();//莊家贏各家都賠說明
     private List<String> taiscore_otherexplain = new ArrayList<>();//其餘多賠說明
-    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100};
-    private int[] rulescore_get = new int[37];
+    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100,1};
+    private int[] rulescore_get = new int[38];
     private TextView tv_Explain;
     private CheckBox ck_R1, ck_R2, ck_R3, ck_R4, ck_R5, ck_R7, ck_R9, ck_R10, ck_R11, ck_R12, ck_R13, ck_R17, ck_R15, ck_R18, ck_R22, ck_R23, ck_R24, ck_R30, ck_R31, ck_R32,ck_R34, ck_R35, ck_R36, ck_R37;
     private Button b_NextStep;
@@ -841,7 +841,11 @@ public class HandInputCheck extends AppCompatActivity {
             taiscore_explain.remove(getResources().getString(R.string.Rule24_Name) + rulescore[23] + "台；");
             rulescore_get[23] = 0;
         }
-
+        //門清一摸三
+        if(ck_R1.isChecked() && ck_R3.isChecked()){
+            taiscore_explain.remove(getResources().getString(R.string.Rule24_Name) + rulescore[37] + "台；");
+            rulescore_get[37] = rulescore[37];
+        }
 
     }
 }

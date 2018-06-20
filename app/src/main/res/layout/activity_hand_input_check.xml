@@ -182,12 +182,15 @@
                 android:textSize="18sp" />
 
         </LinearLayout>
-        <CheckBox
-            android:id="@+id/checkBox_Rule1"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/Rule1_Name"
-            android:textSize="18sp" />
+            android:layout_height="match_parent">
+            <CheckBox
+                android:id="@+id/checkBox_Rule1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Rule1_Name"
+                android:textSize="18sp" />
 
 
             <CheckBox
@@ -196,6 +199,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Rule3_Name"
                 android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
