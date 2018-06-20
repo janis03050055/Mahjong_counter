@@ -15,8 +15,8 @@ public class HandInput extends AppCompatActivity {
 
     private int[][] mahjong = new int[5][9]; //[種類][細分]=數量
     //台數計算
-    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
-    private int[] rulescore_get = new int[36];
+    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100};
+    private int[] rulescore_get = new int[37];
     private List<String> taiscore_explain = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {

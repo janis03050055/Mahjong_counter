@@ -23,10 +23,10 @@ public class HandInputCheck extends AppCompatActivity {
     private List<String> taiscore_explain = new ArrayList<>();//放槍的人台數說明
     private List<String> taiscore_homeexplain_win = new ArrayList<>();//莊家贏各家都賠說明
     private List<String> taiscore_otherexplain = new ArrayList<>();//其餘多賠說明
-    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,16,16,16,16,0,1,1};
-    private int[] rulescore_get = new int[36];
+    private int[] rulescore = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,4,4,4,4,5,8,8,8,8,8,8,8,24,16,16,16,0,1,1,100};
+    private int[] rulescore_get = new int[37];
     private TextView tv_Explain;
-    private CheckBox ck_R1, ck_R2, ck_R3, ck_R4, ck_R5, ck_R7, ck_R9, ck_R10, ck_R11, ck_R12, ck_R13, ck_R17, ck_R15, ck_R18, ck_R22, ck_R23, ck_R24, ck_R30, ck_R31, ck_R32,ck_R34, ck_R35, ck_R36;
+    private CheckBox ck_R1, ck_R2, ck_R3, ck_R4, ck_R5, ck_R7, ck_R9, ck_R10, ck_R11, ck_R12, ck_R13, ck_R17, ck_R15, ck_R18, ck_R22, ck_R23, ck_R24, ck_R30, ck_R31, ck_R32,ck_R34, ck_R35, ck_R36, ck_R37;
     private Button b_NextStep;
     private EditText et_R34;
     //private int tai = 0, tai_home = 0, tai_other = 0;
@@ -53,24 +53,31 @@ public class HandInputCheck extends AppCompatActivity {
         ck_R12 = findViewById(R.id.checkBox_Rule12);
         ck_R13 = findViewById(R.id.checkBox_Rule13);
         ck_R15 = findViewById(R.id.checkBox_Rule15);
+        ck_R17 = findViewById(R.id.checkBox_Rule17);
         ck_R18 = findViewById(R.id.checkBox_Rule18);
+        ck_R22 = findViewById(R.id.checkBox_Rule22);
         ck_R23 = findViewById(R.id.checkBox_Rule23);
+        ck_R24 = findViewById(R.id.checkBox_Rule24);
         ck_R30 = findViewById(R.id.checkBox_Rule30);
         ck_R31 = findViewById(R.id.checkBox_Rule31);
         ck_R32 = findViewById(R.id.checkBox_Rule32);
+        ck_R34 = findViewById(R.id.checkBox_Rule34);
         ck_R35 = findViewById(R.id.checkBox_Rule35);
         ck_R36 = findViewById(R.id.checkBox_Rule36);
+        ck_R37 = findViewById(R.id.checkBox_Rule37);
 
         et_R34 = findViewById(R.id.editText_Rule34);
         //大四喜時門風及圈風不可加計，所以讓選項消失
-        if(rulescore_get[25]>0){
-            ck_R4.setVisibility(View.INVISIBLE);
-            ck_R5.setVisibility(View.INVISIBLE);
+        if(rulescore_get[25] != 0){
+            ck_R4.setVisibility(View.GONE);
+            ck_R5.setVisibility(View.GONE);
         }
+
+
         //暗刻由於無法直接得知，所以初步判斷後使用者再判斷一次
-        if(rulescore_get[16]<0) ck_R17.setVisibility(View.INVISIBLE);
-        if(rulescore_get[21]<0) ck_R22.setVisibility(View.INVISIBLE);
-        if(rulescore_get[23]<0) ck_R24.setVisibility(View.INVISIBLE);
+        if(rulescore_get[16] ==0 ) ck_R17.setVisibility(View.GONE);
+        if(rulescore_get[21] ==0 ) ck_R22.setVisibility(View.GONE);
+        if(rulescore_get[23] ==0 ) ck_R24.setVisibility(View.GONE);
 
         //三暗刻
         ck_R17.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -79,6 +86,8 @@ public class HandInputCheck extends AppCompatActivity {
                 if(isChecked){
                     //顯示提示訊息
                     tv_Explain.setText(R.string.Rule17_Explain);
+                }else{
+                    tv_Explain.setText("");
                 }
             }
         });
@@ -89,6 +98,8 @@ public class HandInputCheck extends AppCompatActivity {
                 if(isChecked){
                     //顯示提示訊息
                     tv_Explain.setText(R.string.Rule22_Explain);
+                }else{
+                    tv_Explain.setText("");
                 }
             }
         });
@@ -99,6 +110,8 @@ public class HandInputCheck extends AppCompatActivity {
                 if(isChecked){
                     //顯示提示訊息
                     tv_Explain.setText(R.string.Rule24_Explain);
+                }else{
+                    tv_Explain.setText("");
                 }
             }
         });
@@ -138,11 +151,9 @@ public class HandInputCheck extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     et_R34.setEnabled(true);
-                    ck_R35.setChecked(true);
                 }else {
                     et_R34.setEnabled(false);
                     et_R34.setText("0");
-                    ck_R35.setChecked(false);
                 }
             }
         });
@@ -160,8 +171,14 @@ public class HandInputCheck extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 //輸入字串長度，假設沒輸入字則預設-1
-                if(s.toString().length() > 0)rulescore_get[33] = Integer.parseInt(et_R34.getText().toString());
-                else rulescore_get[33] = 0;
+                if(s.toString().length() > 0){
+                    rulescore_get[33] = 2 * Integer.parseInt(et_R34.getText().toString());
+                    taiscore_explain.add(getResources().getString(R.string.Rule34_Name) + rulescore_get[33] + "台；");
+                }
+                else {
+                    taiscore_explain.remove(getResources().getString(R.string.Rule34_Name) + rulescore_get[33] + "台；");
+                    rulescore_get[33] = 0;
+                }
             }
         });
         //莊家
@@ -169,12 +186,36 @@ public class HandInputCheck extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
+                    ck_R37.setEnabled(false);
+                    ck_R37.setChecked(false);
                     tv_Explain.setText(R.string.Rule35_Explain);
                     taiscore_explain.add(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
-                    rulescore_get[34] = rulescore[34];
+                    rulescore_get[36] = rulescore[36];
                 }else{
+                    ck_R37.setEnabled(true);
+                    ck_R37.setChecked(true);
                     taiscore_explain.remove(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
+                    rulescore_get[36] = 0;
+                }
+            }
+        });
+        //莊家放槍
+        ck_R37.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    ck_R35.setEnabled(false);
+                    ck_R35.setChecked(false);
+                    tv_Explain.setText("");
+                    rulescore_get[36] = rulescore[36];
+                    rulescore_get[34] = rulescore[34];
+                    taiscore_explain.add(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
+                }else{
+                    ck_R34.setEnabled(true);
+                    ck_R34.setChecked(true);
+                    rulescore_get[36] = 0;
                     rulescore_get[34] = 0;
+                    taiscore_explain.remove(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
                 }
             }
         });
@@ -284,8 +325,8 @@ public class HandInputCheck extends AppCompatActivity {
                     ck_R15.setEnabled(false);
 
                     //槓上開花、海底撈月
-                    ck_R11.setChecked(false);ck_R13.setChecked(false);
-                    ck_R11.setEnabled(false);ck_R13.setEnabled(false);
+                    ck_R13.setChecked(false);
+                    ck_R13.setEnabled(false);
 
                     //自摸
                     ck_R3.setChecked(false);
@@ -295,7 +336,7 @@ public class HandInputCheck extends AppCompatActivity {
 
                 }else{
                     ck_R30.setEnabled(true);ck_R32.setEnabled(true);
-                    ck_R11.setEnabled(true);ck_R13.setEnabled(true);
+                    ck_R13.setEnabled(true);
                     ck_R15.setEnabled(true);
                     ck_R3.setEnabled(true);
                     taiscore_explain.remove(getResources().getString(R.string.Rule12_Name) + rulescore[11] + "台；");
@@ -646,15 +687,15 @@ public class HandInputCheck extends AppCompatActivity {
                     ck_R2.setChecked(false);ck_R10.setChecked(false);ck_R15.setChecked(false);
                     ck_R2.setEnabled(false);ck_R10.setEnabled(false);ck_R15.setEnabled(false);
 
-                    //搶槓、槓上開花
-                    ck_R7.setChecked(false);ck_R11.setChecked(false);
-                    ck_R7.setEnabled(false);ck_R11.setEnabled(false);
+                    //搶槓
+                    ck_R7.setChecked(false);
+                    ck_R7.setEnabled(false);
 
                     //河底撈魚、海底撈月
                     ck_R12.setChecked(false);ck_R13.setChecked(false);
                     ck_R12.setEnabled(false);ck_R13.setEnabled(false);
 
-                    rulescore_get[8] = rulescore[29];
+                    rulescore_get[29] = rulescore[29];
                 }else{
                     ck_R9.setEnabled(true);ck_R18.setEnabled(true);ck_R23.setEnabled(true);
                     ck_R31.setEnabled(true);ck_R32.setEnabled(true);
@@ -767,7 +808,6 @@ public class HandInputCheck extends AppCompatActivity {
                 Intent intent = new Intent(HandInputCheck.this, Information_pay.class);
                 intent.putStringArrayListExtra("taiscore_explain", (ArrayList<String>) taiscore_explain);
                 intent.putExtra("rulescore_get",rulescore_get);//實際獲得台數
-                intent.putExtra("rulescore",rulescore);//規定台數
                 startActivity(intent);
             }
         });
@@ -794,9 +834,6 @@ public class HandInputCheck extends AppCompatActivity {
             rulescore_get[23] = 0;
         }
 
-        //連莊多兩倍
-        if(ck_R34.isChecked() && rulescore_get[33]>0){
-            rulescore_get[33] = rulescore_get[33] * 2;
-        }
+
     }
 }

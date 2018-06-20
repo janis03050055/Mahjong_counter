@@ -24,6 +24,8 @@
     <string name="pay_home">莊家要給：</string>
     <string name="keep_earn_money">繼續賺錢！</string>
     <string name="information_pay_title">所以你賺了多少</string>
+    <string name="total_tai">共_____台</string>
+    <string name="total_money">共_____元</string>
     //麻將
     <string name="w1">一萬</string>
     <string name="w2">二萬</string>
