@@ -153,7 +153,9 @@ public class HandInputCheck extends AppCompatActivity {
                     et_R34.setEnabled(true);
                 }else {
                     et_R34.setEnabled(false);
+                    taiscore_explain.remove(getResources().getString(R.string.Rule34_Name) + rulescore_get[33] + "台；");
                     et_R34.setText("0");
+
                 }
             }
         });
@@ -173,7 +175,9 @@ public class HandInputCheck extends AppCompatActivity {
                 //輸入字串長度，假設沒輸入字則預設-1
                 if(s.toString().length() > 0){
                     rulescore_get[33] = 2 * Integer.parseInt(et_R34.getText().toString());
-                    taiscore_explain.add(getResources().getString(R.string.Rule34_Name) + rulescore_get[33] + "台；");
+                    if(rulescore_get[33] != 0){
+                        taiscore_explain.add(getResources().getString(R.string.Rule34_Name) + rulescore_get[33] + "台；");
+                    }
                 }
                 else {
                     taiscore_explain.remove(getResources().getString(R.string.Rule34_Name) + rulescore_get[33] + "台；");
@@ -190,7 +194,7 @@ public class HandInputCheck extends AppCompatActivity {
                     ck_R37.setChecked(false);
                     tv_Explain.setText(R.string.Rule35_Explain);
                     taiscore_explain.add(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
-                    rulescore_get[36] = rulescore[36];
+                    rulescore_get[34] = rulescore[34];
                 }else{
                     ck_R37.setEnabled(true);
                     ck_R37.setChecked(true);
@@ -211,8 +215,8 @@ public class HandInputCheck extends AppCompatActivity {
                     rulescore_get[34] = rulescore[34];
                     taiscore_explain.add(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");
                 }else{
-                    ck_R34.setEnabled(true);
-                    ck_R34.setChecked(true);
+                    ck_R35.setEnabled(true);
+                    ck_R35.setChecked(true);
                     rulescore_get[36] = 0;
                     rulescore_get[34] = 0;
                     taiscore_explain.remove(getResources().getString(R.string.Rule35_Name) + rulescore[34] + "台；");

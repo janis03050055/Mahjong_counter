@@ -58,7 +58,8 @@ public class Information_pay extends AppCompatActivity {
                 tv_title.setText("莊家給贏家");
             }//放槍的人是一般人給
             else {
-                pay_tai = pay_tai - (rulescore_get[33] + rulescore_get[34]);
+                pay_tai = pay_tai - rulescore_get[34];
+                pay_tai = pay_tai - rulescore_get[33];
                 tv_pay_tai.setText(String.valueOf(pay_tai));
                 tv_title.setText("放槍的人給贏家");
             }
