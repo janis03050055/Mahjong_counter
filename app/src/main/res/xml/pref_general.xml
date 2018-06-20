@@ -1,0 +1,216 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/Rule_NS_search_titles"
+        android:entryValues="@array/Rule_NS_search_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/Rule_NS_search" />
+
+    <PreferenceCategory
+        android:key="version"
+        android:title="@string/MoreScore_1" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule1_switch"
+        android:summary="@string/Rule1_Explain"
+        android:title="@string/Rule1_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule2_switch"
+        android:summary="@string/Rule2_Explain"
+        android:title="@string/Rule2_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule3_switch"
+        android:summary="@string/Rule3_Explain"
+        android:title="@string/Rule3_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule4_switch"
+        android:summary="@string/Rule4_Explain"
+        android:title="@string/Rule4_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule5_switch"
+        android:summary="@string/Rule5_Explain"
+        android:title="@string/Rule5_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule6_switch"
+        android:summary="@string/Rule6_Explain"
+        android:title="@string/Rule6_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule7_switch"
+        android:summary="@string/Rule7_Explain"
+        android:title="@string/Rule7_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule8_switch"
+        android:summary="@string/Rule8_Explain"
+        android:title="@string/Rule8_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule9_switch"
+        android:summary="@string/Rule9_Explain"
+        android:title="@string/Rule9_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule10_switch"
+        android:summary="@string/Rule10_Explain"
+        android:title="@string/Rule10_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule11_switch"
+        android:summary="@string/Rule11_Explain"
+        android:title="@string/Rule11_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule12_switch"
+        android:summary="@string/Rule12_Explain"
+        android:title="@string/Rule12_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule13_switch"
+        android:summary="@string/Rule13_Explain"
+        android:title="@string/Rule13_Name" />
+
+    <PreferenceCategory
+        android:key="version"
+        android:title="@string/MoreScore_2" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule14_switch"
+        android:summary="@string/Rule14_Explain"
+        android:title="@string/Rule14_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule15_switch"
+        android:summary="@string/Rule15_Explain"
+        android:title="@string/Rule15_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule16_switch"
+        android:summary="@string/Rule16_Explain"
+        android:title="@string/Rule16_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule17_switch"
+        android:summary="@string/Rule17_Explain"
+        android:title="@string/Rule17_Name" />
+    <PreferenceCategory
+        android:key="version"
+        android:title="@string/MoreScore_4" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule18_switch"
+        android:summary="@string/Rule18_Explain"
+        android:title="@string/Rule18_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule19_switch"
+        android:summary="@string/Rule19_Explain"
+        android:title="@string/Rule19_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule20_switch"
+        android:summary="@string/Rule20_Explain"
+        android:title="@string/Rule20_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule21_switch"
+        android:summary="@string/Rule21_Explain"
+        android:title="@string/Rule21_Name" />
+    <PreferenceCategory
+        android:key="version"
+        android:title="@string/MoreScore_5" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule22_switch"
+        android:summary="@string/Rule22_Explain"
+        android:title="@string/Rule22_Name" />
+    <PreferenceCategory
+        android:key="version"
+        android:title="@string/MoreScore_8" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule23_switch"
+        android:summary="@string/Rule23_Explain"
+        android:title="@string/Rule23_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule24_switch"
+        android:summary="@string/Rule24_Explain"
+        android:title="@string/Rule24_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule25_switch"
+        android:summary="@string/Rule25_Explain"
+        android:title="@string/Rule1_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule26_switch"
+        android:summary="@string/Rule26_Explain"
+        android:title="@string/Rule26_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule27_switch"
+        android:summary="@string/Rule27_Explain"
+        android:title="@string/Rule27_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule28_switch"
+        android:summary="@string/Rule28_Explain"
+        android:title="@string/Rule28_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule29_switch"
+        android:summary="@string/Rule29_Explain"
+        android:title="@string/Rule29_Name" />
+    <PreferenceCategory
+        android:key="version"
+        android:title="@string/MoreScore_16" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule30_switch"
+        android:summary="@string/Rule30_Explain"
+        android:title="@string/Rule30_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule31_switch"
+        android:summary="@string/Rule31_Explain"
+        android:title="@string/Rule31_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule32_switch"
+        android:summary="@string/Rule32_Explain"
+        android:title="@string/Rule32_Name" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Rule33_switch"
+        android:summary="@string/Rule33_Explain"
+        android:title="@string/Rule33_Name" />
+
+
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+
+
+</PreferenceScreen>
